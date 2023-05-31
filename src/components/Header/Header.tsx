@@ -5,16 +5,16 @@ function Header() {
     return (
         <header>
             <Link to='/'>
-                <p>Home</p>
+                <p>ACERCA DE</p>
             </Link>
             <Link to='/about'>
-                <p>About us</p>
+                <p>¿QUÉ HACEMOS?</p>
             </Link>
             <Link to='/services'>
-                <p>Our services</p>
+                <p>ENSAYOS</p>
             </Link>
             <Link to='/contact'>
-                <p>Contact us</p>
+                <p>CONTACTO</p>
             </Link>
         </header>
     )

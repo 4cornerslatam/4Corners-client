@@ -1,9 +1,14 @@
-$test-color: #c24b7e;
+$main-white: #FFFFFF;
+$base-pink: #DE5590;
+$base-blue: #3743AA;
+$main-black: #333333;
+$primary-font: 'Poppins', sans-serif;
+$secondary-font: 'Roboto', sans-serif;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: $test-color;
 }
 
+ 
