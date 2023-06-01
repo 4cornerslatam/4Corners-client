@@ -14,7 +14,9 @@ function Home() {
 				</p>
 			</div>
 			<div className='home-button'>
-				<button>Saber +</button>
+				<button>
+					<p>Saber +</p>
+				</button>
 			</div>
 		</section>
 	);
