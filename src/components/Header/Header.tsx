@@ -1,28 +1,19 @@
-import './_header.scss'
-import { useState } from 'react';
+import { useContext} from 'react';
+import { AppContext } from '../../context/AppContext';
 import { Fade as Hamburger } from 'hamburger-react'
 import logoPink from '../../assets/logo_v1_rosa@2x.png';
+import './_header.scss'
 
-interface HeaderProps {
-    onToggle: (isOpen: boolean) => void;
-}
-
-function Header(props: HeaderProps) {
-    const [isOpen, setOpen] = useState(false);
-    const [baseColor, setBaseColor] = useState('#DE5590')
-
+function Header() {
+    const { showNavbar, setShowNavbar, baseColor, setBaseColor } = useContext(AppContext)
     const handleToggle = () => {
-        setOpen(!isOpen);
-        props.onToggle(!isOpen);
-        setBaseColor(isOpen ? '#DE5590' : '#000000');
+        setShowNavbar(!showNavbar);
+        setBaseColor(showNavbar ? '#DE5590' : '#000000');
     }
-
     return (
         <header className='header'>
-            <Hamburger size={22} toggled={isOpen} toggle={handleToggle} color={baseColor}/>
+            <Hamburger size={22} toggled={showNavbar} toggle={handleToggle} color={baseColor}/>
             <img src={logoPink} alt="4corners-logo-pink" />
-            {/* <div className='img-container'>
-            </div> */}
         </header>
     )
 }
