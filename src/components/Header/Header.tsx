@@ -1,23 +1,30 @@
-import { Link } from "react-router-dom"
 import './_header.scss'
+import { useState } from 'react';
+import { Fade as Hamburger } from 'hamburger-react'
+import logoPink from '../../assets/logo_v1_rosa@2x.png';
 
-function Header() {
+interface HeaderProps {
+    onToggle: (isOpen: boolean) => void;
+}
+
+function Header(props: HeaderProps) {
+    const [isOpen, setOpen] = useState(false);
+    const [baseColor, setBaseColor] = useState('#DE5590')
+
+    const handleToggle = () => {
+        setOpen(!isOpen);
+        props.onToggle(!isOpen);
+        setBaseColor(isOpen ? '#DE5590' : '#000000');
+    }
+
     return (
-        <header>
-            <Link to='/'>
-                <p>ACERCA DE</p>
-            </Link>
-            <Link to='/about'>
-                <p>¿QUÉ HACEMOS?</p>
-            </Link>
-            <Link to='/services'>
-                <p>ENSAYOS</p>
-            </Link>
-            <Link to='/contact'>
-                <p>CONTACTO</p>
-            </Link>
+        <header className='header'>
+            <Hamburger size={22} toggled={isOpen} toggle={handleToggle} color={baseColor}/>
+            <img src={logoPink} alt="4corners-logo-pink" />
+            {/* <div className='img-container'>
+            </div> */}
         </header>
     )
 }
 
-export { Header }
+export { Header } 
