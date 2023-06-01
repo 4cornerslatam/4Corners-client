@@ -60,3 +60,44 @@
     line-height: 30px;
     color: $base-pink;
 }
+
+/* Media query para iPhone SE */
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+    .home {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  
+    .home-title {
+      line-height: 60px;
+      font-size: 24px;
+    }
+  
+    .linea-1 {
+      font-size: 32px;
+    }
+  
+    .linea-2,
+    .linea-3 {
+      font-size: 24px;
+    }
+  
+    .home-paragraph {
+      width: 90%;
+      height: auto;
+      margin-top: 15px;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  
+    .home-button button {
+      p {
+        padding: 10px 100px;
+        margin: 20px;
+        font-size: 20px;
+      }
+    }
+  }
+  
