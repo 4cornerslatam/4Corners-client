@@ -1,11 +1,16 @@
+import { useContext } from "react";
 import { Header } from "../Header/Header";
 import { Footer } from "../Footer/Footer";
 import { Outlet } from "react-router-dom";
+import { NavbarMobile } from "../NavbarMobile/NavbarMobile";
+import { AppContext } from "../../context/AppContext";
 
 function Layout() {
+  const { showNavbar } = useContext(AppContext);
     return(
         <main>
-          <Header/>
+          <Header />
+          {showNavbar && <NavbarMobile />}
           <Outlet />
           <Footer />
         </main>

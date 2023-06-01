@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { AppProvider } from "./context/AppContext";
 import { Layout } from './components/Layout/Layout'
 import { routes } from './utils/routes';
 import { Home } from "./pages/Home";
@@ -7,9 +8,9 @@ import { Services } from "./pages/Services";
 import { Contact } from "./pages/Contact";
 
 function App() {
-
   return (
     <BrowserRouter>
+    <AppProvider>
       <Routes>
         <Route element={<Layout />}>
           <Route path={routes.HOME} element={<Home />}/>
@@ -18,6 +19,7 @@ function App() {
           <Route path={routes.CONTACT} element={<Contact />}/>
         </Route>
       </Routes>
+    </AppProvider>
     </BrowserRouter>
   )
 }
