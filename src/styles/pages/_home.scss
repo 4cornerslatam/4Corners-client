@@ -6,8 +6,8 @@
     text-align: center;
     width: 100vw;
     height: auto;
-    margin-top: 253px;
-    margin-bottom: 363px;
+    margin-top: 131px;
+    margin-bottom: 176px;
 }
 
 .home-title {
@@ -19,12 +19,12 @@
 
 .linea-1 {
     font-weight: 900;
-    font-size: 120px;
-    letter-spacing: 0.3em;
+    font-size: 100px;
+    letter-spacing: 0.25em;
 }
 
 .linea-2 {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 64px;
 }
 
@@ -34,18 +34,17 @@
 }
 
 .home-paragraph {
-
+    width: 550px;
+    height: 214px;
+    margin: 30px auto;
     font-family: 'Roboto';
-    font-style:normal;
-    font-weight: 300;
-    font-size: 24px;
+    font-weight:100;
+    font-size: 32px;
     line-height: 40px;
     color: $main-black;
 }
 
 .home-button button {
-    width: 232px;
-    height: 96px;
     background-color: $main-white;
     border: 2px solid #C54F81;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -53,10 +52,11 @@
 }
 
 .home-button button p {
+    padding: 33px 61px 33px 61px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 30px;
-    color: #C54F81;
+    color: $base-pink;
 }
