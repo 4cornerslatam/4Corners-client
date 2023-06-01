@@ -11,7 +11,7 @@ function Layout() {
         <main>
           <Header />
           {showNavbar && <NavbarMobile />}
-          <Outlet />
+          {!showNavbar && <Outlet /> }
           <Footer />
         </main>
     )

@@ -1,3 +1,36 @@
 .navbar-list {
-    font-size: 4rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+    row-gap: 3.2rem;
+    padding:10rem 0 23rem 3.6rem;
+    li {
+        list-style: none;
+        a {
+            position: relative;
+            font-size: 2.4rem;
+            color: $main-white;
+            text-decoration: none;
+        }
+        :hover {
+            color: $base-blue;
+            font-size: 3rem;
+            border-bottom: none;
+        } 
+    }
+    :hover {
+        ::after {
+            content: '';
+            position: absolute;
+            bottom: 1px;
+            left: 50%;
+            width: 60%;
+            border-bottom: .2rem solid $base-blue;
+        }
+    }
+
+    :nth-child(4) {
+        padding-top: 8rem ;
+    }
 }
