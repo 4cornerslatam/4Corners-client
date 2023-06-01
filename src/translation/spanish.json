@@ -1,13 +1,14 @@
 {
-    "navBarText" :{ 
+    "navBar" :{ 
         "HOME": "HOME",
-        "ABOUT":"ACERCA DE",
+        "ABOUT":"ACERCA",
         "SERVICES": "SERVICIOS",
         "TEAM": "¿QUIÉNES SOMOS",
-        "CONTACT": "CONTACTO"
+        "CONTACT": "CONTACTO",
+        "START": "COMENCEMOS"
     },
 
-    "homeText" : {
+    "home" : {
         "TITLE": {
             "titleLine1":"CODING",  
             "titleLine2":"FOR",
@@ -16,23 +17,30 @@
         "DESCRIPTION": "Queremos ser tus aliadas y facilitar tu camino en el mundo digital. Por eso nos esforzamos por entender tus necesidades y diseñar soluciones intuitivas y accesibles que mejoren la vida de las personas."
     },
 
-    "aboutText" : {
-        "TITLE": "JUNTAS SOMOS PODEROSAS",
+    "aboutUs" : {
+        "TITLE": {
+            "titleLine1":"ACERCA",  
+            "titleLine2":"DE"
+        },
         "DESCRIPTION": "4 Corners es un grupo formado por cuatro desarrolladoras web con diversos backgrounds profesionales que nos hemos unido con un propósito común: continuar aprendiendo juntas y compartir nuestros conocimientos mientras ofrecemos soluciones digitales estéticas, prácticas y amigables para las personas.",
         "VALUES": [
             {
+                "id":"1",
                 "title": "Somos aprendices de por vida",
                 "description":"Como desarrolladoras web entendemos la importancia de aprender continuamente para expandir nuestras habilidades y conocimientos  y superar los desafíos que enfrentamos en esta industria en constante evolución.",
             },
             {
+                "id":"2",
                 "title": "Talentos diversos",
                 "description":"Nuestros backgrounds diversos, nos permiten impulsar la creatividad, la innovación y la excelencia en nuestro trabajo. Creemos que la verdadera magia sucede cuando diferentes mentes, cada una con diferentes experiencias e historias,  se unen en busca de un objetivo común.",
             },
             {
+                "id":"3",
                 "title": "Nos ponemos en el lugar de los demás",
                 "description":"Nos esforzamos por entender las necesidades de las personas a las que servimos y diseñamos soluciones digitales intuitivas y accesibles. Buscamos mejorar su  vida al proporcionarles herramientas que les faciliten su camino en el mundo digital.",
             },
             {
+                "id":"4",
                 "title": "Creemos en la importancia de unir fuerzas para impulsar el crecimiento colectivo",
                 "description":"Estamos convencidas de que al compartir nuestras experiencias y conocimientos, creamos un ambiente de apoyo y ayuda mutua. Nos convertimos en recursos para otros y, a su vez, nos beneficiamos y aprendemos de las ideas y perspectivas de quienes nos rodean.",
             }
@@ -40,29 +48,74 @@
         "CLOSING": "Te invitamos a unirte a nuestra comunidad, donde el aprendizaje continuo, el apoyo mutuo y el intercambio de conocimientos son la base para, juntas, lograr grandes sueños."
     },
 
-    "teamText" : {
-        "INTRO": "Nuestros diversos backgrounds son un plus para este proyecto. Al venir de diferentes campos profesionales, aportamos una amplia gama de conocimientos y habilidades a nuestro equipo. Esto nos permite abordar los desafíos desde diferentes perspectivas y encontrar soluciones innovadoras. Nos complementamos mutuamente y juntas formamos un equipo fuerte y versátil capaz de ofrecer soluciones digitales sólidas y exitosas.",
-        "TEAM":[
+    "services":{
+        "TITLE": {
+            "titleLine1":"SERVICIOS",  
+            "titleLine2":"DE"
+        },
+        "DESCRIPTION":"Nos esforzamos por entender las necesidades de las personas a las que servimos y diseñamos soluciones digitales intuitivas y accesibles. Buscamos mejorar su  vida al proporcionarles herramientas que les faciliten su camino en el mundo digital.",
+        "PACKS":[
             {
-                "name": "Bere",
-                "subtitle": "Desarrolladora Front-end - Ingeniera en comunicaciones y electrónica",
-                "description": "Soy una ingeniera de profesión y desarrolladora front-end por elección, perteneciente a la comunidad indígena Hñahñu. A lo largo de mi vida, he buscado el crecimiento personal a través del aprendizaje continuo y la práctica. El desarrollo web me permite aplicar esta mentalidad en la creación de tecnología, generando un impacto positivo en la vida de los demás."
+                "id":"1",
+                "title": "",
+                "description": ""
             },
             {
-                "name": "Kami",
-                "subtitle": "Desarrolladora Front-end - Arquitecta",
-                "description": "Soy una exploradora incansable de la creatividad y una soñadora que ha encontrado en la programación una forma de dar vida a sus ideas y mejorar la experiencia digital de las personas. Como web developer, disfruto creando experiencias cautivadoras, colaborando con otros profesionales para alcanzar objetivos comunes y desafiándome a mí misma para mejorar día a día."
+                "id":"2",
+                "title": "",
+                "description": ""
             },
             {
-                "name": "Shar",
-                "subtitle": "Desarrolladora Front-end - Diseñadora Gráfica",
-                "description": "¡Hola! Soy Sharon Arana. Mi experiencia en diseño me ha brindado la capacidad de fusionar estética y funcionalidad en mi trabajo, tomando siempre la experiencia del usuario como una prioridad. Me apasiona construir aplicaciones web hermosas, intuitivas y funcionales, y estoy emocionada de seguir aprendiendo y creciendo como desarrolladora en este apasionante campo."
-            },
-            {
-                "name": "Ingrid",
-                "subtitle": "Desarrolladora Front-end - Arquitecta - Entusiaste del e-commerce",
-                "description": "Creo objetos, espacios y código. Esa variedad de intereses me ha impulsado a  aprender de manera constante, siempre buscando nuevos retos y conocimientos. Ahora, como Front-end Developer, combino mis habilidades técnicas y creativas para ser parte del desarrollo de productos y experiencias digitales que conjuguen estética, funcionalidad y sean amigables para las personas."
+                "id":"3",
+                "title": "",
+                "description": ""
             }
         ]
+    },
+
+    "team" : {
+        "TITLE": "JUNTAS SOMOS PODEROSAS",
+        "DESCRIPTION": "Nuestros diversos backgrounds son un plus para este proyecto. Al venir de diferentes campos profesionales, aportamos una amplia gama de conocimientos y habilidades a nuestro equipo. Esto nos permite abordar los desafíos desde diferentes perspectivas y encontrar soluciones innovadoras. Nos complementamos mutuamente y juntas formamos un equipo fuerte y versátil capaz de ofrecer soluciones digitales sólidas y exitosas.",
+        "TEAM":[
+            {
+                "id":"1",
+                "name": "Bere",
+                "subtitle": "Desarrolladora Front-end - Ingeniera en comunicaciones y electrónica",
+                "description": "Soy una ingeniera de profesión y desarrolladora front-end por elección, perteneciente a la comunidad indígena Hñahñu. A lo largo de mi vida, he buscado el crecimiento personal a través del aprendizaje continuo y la práctica. El desarrollo web me permite aplicar esta mentalidad en la creación de tecnología, generando un impacto positivo en la vida de los demás.",
+                "linkedinUrl":"https://www.linkedin.com/in/beresdev/"
+            },
+            {
+                "id":"2",
+                "name": "Kami",
+                "subtitle": "Desarrolladora Front-end - Arquitecta",
+                "description": "Soy una exploradora incansable de la creatividad y una soñadora que ha encontrado en la programación una forma de dar vida a sus ideas y mejorar la experiencia digital de las personas. Como web developer, disfruto creando experiencias cautivadoras, colaborando con otros profesionales para alcanzar objetivos comunes y desafiándome a mí misma para mejorar día a día.",
+                "linkedinUrl":"https://www.linkedin.com/in/kamilaojeda/"
+            },
+            {
+                "id":"3",
+                "name": "Shar",
+                "subtitle": "Desarrolladora Front-end - Diseñadora Gráfica",
+                "description": "¡Hola! Soy Sharon Arana. Mi experiencia en diseño me ha brindado la capacidad de fusionar estética y funcionalidad en mi trabajo, tomando siempre la experiencia del usuario como una prioridad. Me apasiona construir aplicaciones web hermosas, intuitivas y funcionales, y estoy emocionada de seguir aprendiendo y creciendo como desarrolladora en este apasionante campo.",
+                "linkedinUrl":"https://www.linkedin.com/in/sharoninaa/"
+            },
+            {
+                "id":"4",
+                "name": "Ingrid",
+                "subtitle": "Desarrolladora Front-end - Arquitecta - Entusiaste del e-commerce",
+                "description": "Creo objetos, espacios y código. Esa variedad de intereses me ha impulsado a  aprender de manera constante, siempre buscando nuevos retos y conocimientos. Ahora, como Front-end Developer, combino mis habilidades técnicas y creativas para ser parte del desarrollo de productos y experiencias digitales que conjuguen estética, funcionalidad y sean amigables para las personas.",
+                "linkedinUrl":"https://www.linkedin.com/in/ingridgallegos/"
+            }
+        ]
+    },
+
+    "contact":{
+        "TITLE": "COMENCEMOS",
+        "DESCRIPTION": "Te invitamos a unirte a nuestra comunidad, donde el aprendizaje continuo, el apoyo mutuo y el intercambio de conocimientos son la base para, juntas, lograr grandes sueños."
+    },
+
+    "footer": {
+        "COPYWRIGHT": "©",
+        "YEAR":"2023",
+        "CREATORS": "4corners" 
     }
 }
