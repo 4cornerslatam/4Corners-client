@@ -1,0 +1,47 @@
+.home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+}
+
+.home-title {
+    text-transform: uppercase;
+    color: $base-blue;
+    font-family: $primary-font;
+    line-height: 100px;
+
+}
+
+.linea-1 {
+    position: absolute;
+    width: 1488px;
+    height: 100px;
+    left: 120px;
+    top: 253px;
+    font-weight: 900;
+    font-size: 120px;
+    letter-spacing: 0.3em;
+}
+
+.linea-2 {
+    position: absolute;
+    width: 176px;
+    height: 100px;
+    left: 774px;
+    top: 345px;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.linea-3 {
+    position: absolute;
+    width: 822px;
+    height: 100px;
+    left: 455px;
+    top: 421px;
+    font-weight: 900;
+    font-size: 64px;
+}
+
