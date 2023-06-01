@@ -10,13 +10,13 @@ interface AppContextProps {
 export const AppContext = createContext<AppContextProps>({
     showNavbar: false,
     setShowNavbar: () => {},
-    baseColor:'#DE5590',
+    baseColor:'#C54F81',
     setBaseColor: () => {},
 });
 
 export const AppProvider: React.FC<{children: React.ReactNode}> = ({ children }) => {
     const [showNavbar, setShowNavbar] = useState(false);
-    const [baseColor, setBaseColor] = useState('#DE5590')
+    const [baseColor, setBaseColor] = useState('#C54F81')
 
     return (
         <AppContext.Provider

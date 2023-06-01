@@ -1,5 +1,4 @@
 import { NavbarOptionsList } from '../NavbarOptionsList/NavbarOptionsList';
-import './_navbarMovile.scss'
 
 function NavbarMobile() {
     return(
