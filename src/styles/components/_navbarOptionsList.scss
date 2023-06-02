@@ -30,7 +30,11 @@
         }
     }
 
-    :nth-child(4) {
+    :nth-child(5) {
         padding-top: 8rem ;
+    }
+
+    div {
+        display: none;
     }
 }

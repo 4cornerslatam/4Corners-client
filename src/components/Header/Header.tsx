@@ -17,14 +17,16 @@ function Header() {
         setShowNavbar(!showNavbar);
     }
     return (
-        <header className='header' style={{backgroundColor: baseColor}}>
-            <Hamburger size={22} toggled={showNavbar} toggle={handleToggle} color={hamburgerColor}/>
-            { showNavbar ? (
-                <img src={logoWhite} alt='4corners-logo-white'/>
-                ) : (
-                    <img src={logoPink} alt='4corners-logo-pink' />
-                    )}
-        </header>
+      <header className='header' style={{backgroundColor: baseColor}}>
+        <div className='hamburger-container'>
+          <Hamburger size={22} toggled={showNavbar} toggle={handleToggle} color={hamburgerColor} />
+        </div>
+        { showNavbar ? 
+          (<img src={logoWhite} alt='4corners-logo-white'/>) 
+          :
+          (<img src={logoPink} alt='4corners-logo-pink' />)
+        }
+    </header>
     )
 }
 
