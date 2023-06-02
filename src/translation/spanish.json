@@ -1,10 +1,10 @@
 {
     "navBar" :{ 
         "HOME": "HOME",
-        "ABOUT":"ACERCA DE",
-        "SERVICES": "SERVICIOS",
-        "TEAM": "¿QUIÉNES SOMOS",
-        "CONTACT": "CONTACTO",
+        "ABOUT":"Acerca de",
+        "SERVICES": "Servicios",
+        "TEAM": "¿Quiénes somos?",
+        "CONTACT": "Contacto",
         "START": "COMENCEMOS"
     },
 
