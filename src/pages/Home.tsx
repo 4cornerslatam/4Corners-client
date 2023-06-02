@@ -1,4 +1,5 @@
-function Home() {
+import { ButtonToServices } from '../components/ButtonToServices/ButtonToServices';
+const Home = (): JSX.Element => {
 	return (
 		<section className='home'>
 			<div className='home-title'>
@@ -14,12 +15,10 @@ function Home() {
 				</p>
 			</div>
 			<div className='home-button'>
-				<button>
-					<p>Saber +</p>
-				</button>
+				<ButtonToServices />
 			</div>
 		</section>
 	);
-}
+};
 
 export { Home };
