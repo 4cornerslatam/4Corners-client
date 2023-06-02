@@ -3,6 +3,7 @@ import { AppContext } from '../../context/AppContext';
 import { Fade as Hamburger } from 'hamburger-react'
 import logoPink from '../../assets/logo_v1_rosa@2x.png';
 import logoWhite from '../../assets/logo_v1_bco@2x.png'
+import { NavbarOptionsList } from '../NavbarOptionsList/NavbarOptionsList';
 
 function Header() {
     const { showNavbar, setShowNavbar, baseColor, setBaseColor } = useContext(AppContext)
@@ -26,6 +27,9 @@ function Header() {
           :
           (<img src={logoPink} alt='4corners-logo-pink' />)
         }
+        <div className='navbar-list-desktop'>
+          <NavbarOptionsList />
+        </div>
     </header>
     )
 }

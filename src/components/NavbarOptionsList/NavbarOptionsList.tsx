@@ -9,8 +9,11 @@ function NavbarOptionsList() {
     const navBar = data.navBar;
 
     const handleClick = () => {
-        setShowNavbar(!showNavbar);
+        showNavbar === true ? 
+        (setShowNavbar(!showNavbar)):
+        (setShowNavbar(false))
     }
+
     return(
         <ul className="navbar-list">
             <li><Link to='/' onClick={handleClick}>{navBar.ABOUT}</Link></li>
