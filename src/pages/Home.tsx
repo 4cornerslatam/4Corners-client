@@ -1,18 +1,18 @@
 import { ButtonToServices } from '../components/ButtonToServices/ButtonToServices';
+import data from '../translation/spanish.json';
+
 const Home = (): JSX.Element => {
+	const home = data.home;
+
 	return (
 		<section className='home'>
 			<div className='home-title'>
-				<p className='linea-1'>Coding</p>
-				<p className='linea-2'>For</p>
-				<p className='linea-3'>Dreams</p>
+				<p className='linea-1'>{home.TITLE.titleLine1}</p>
+				<p className='linea-2'>{home.TITLE.titleLine2}</p>
+				<p className='linea-3'>{home.TITLE.titleLine3}</p>
 			</div>
 			<div className='home-paragraph'>
-				<p>
-					Queremos ser tus aliadas y facilitar tu camino en el mundo digital. Por eso
-					nos esforzamos por entender tus necesidades y diseñar soluciones intuitivas
-					y accesibles que mejoren la vida de las personas.
-				</p>
+				<p>{home.DESCRIPTION}</p>
 			</div>
 			<div className='home-button'>
 				<ButtonToServices />
