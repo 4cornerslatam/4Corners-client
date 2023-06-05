@@ -5,7 +5,7 @@ import logoPink from '../../assets/logo_v1_rosa@2x.png';
 import logoWhite from '../../assets/logo_v1_bco@2x.png'
 import { NavbarOptionsList } from '../NavbarOptionsList/NavbarOptionsList';
 
-function Header() {
+const Header = (): JSX.Element => {
     const { showNavbar, setShowNavbar, baseColor, setBaseColor } = useContext(AppContext)
     const [hamburgerColor, setHamburgerColor] = useState(baseColor)
     

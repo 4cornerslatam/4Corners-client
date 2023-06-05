@@ -4,7 +4,7 @@ import { AppContext } from '../../context/AppContext';
 import logoPink from '../../assets/logo_v1_rosa@2x.png'
 import data from '../../translation/spanish.json'
 
-function NavbarOptionsList() {
+const NavbarOptionsList = (): JSX.Element => {
     const { showNavbar, setShowNavbar} = useContext(AppContext)
     const navBar = data.navBar;
 

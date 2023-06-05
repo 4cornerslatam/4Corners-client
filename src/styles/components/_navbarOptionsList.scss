@@ -40,6 +40,7 @@
         display: none;
     }
 
+
     @media screen and (min-width: 768px) {
         width: 90%;
         height: 100%;
@@ -53,7 +54,7 @@
         li {
             a {
                 color: $base-pink;
-                font-size: 1.8rem;
+                font-size: 1.6rem;
                 font-weight: normal;
                 text-transform: none;
                 
@@ -98,5 +99,12 @@
         :nth-child(5) {
             padding-top: 0;
         }
-    } 
+    }
+    @media only screen and (min-width: 1024px) {
+        li {
+            a {
+                font-size: 1.8rem;
+            }
+        }
+    }
 } 

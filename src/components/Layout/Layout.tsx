@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 import { NavbarMobile } from "../NavbarMobile/NavbarMobile";
 import { AppContext } from "../../context/AppContext";
 
-function Layout() {
+const Layout = (): JSX.Element => {
   const { showNavbar } = useContext(AppContext);
     return(
         <main>
