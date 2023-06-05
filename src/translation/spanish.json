@@ -74,7 +74,10 @@
     },
 
     "team" : {
-        "TITLE": "JUNTAS SOMOS PODEROSAS",
+        "TITLE": {
+            "titleLine1": "JUNTAS",
+            "titleLine2": "SOMOS PODEROSAS"
+        },
         "DESCRIPTION": "Nuestros diversos backgrounds son un plus para este proyecto. Al venir de diferentes campos profesionales, aportamos una amplia gama de conocimientos y habilidades a nuestro equipo. Esto nos permite abordar los desafíos desde diferentes perspectivas y encontrar soluciones innovadoras. Nos complementamos mutuamente y juntas formamos un equipo fuerte y versátil capaz de ofrecer soluciones digitales sólidas y exitosas.",
         "TEAM":[
             {
