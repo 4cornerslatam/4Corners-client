@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AppContext } from '../../context/AppContext';
 
-function Footer () {
+const Footer = (): JSX.Element => {
     const { showNavbar, baseColor, setBaseColor } = useContext(AppContext)
     const [brandColor, setBrandColor] = useState(baseColor)
     
