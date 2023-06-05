@@ -13,9 +13,9 @@ const Footer = (): JSX.Element => {
     return(
         <footer style={{backgroundColor: baseColor}}>
           <div className="social-media_container" >
-            <i className="fa-brands fa-linkedin-in" style={{color: brandColor}}></i>
+            <a href="http://linkedin.com/company/4corners-coding-dreams" target="_blank"><i className="fa-brands fa-linkedin-in" style={{color: brandColor}}></i></a>
             <i className="fa-brands fa-instagram" style={{color: brandColor}}></i>
-            <i className="fa-brands fa-youtube" style={{color: brandColor}}></i>
+            <a href="https://www.youtube.com/channel/UC0XeWF8JhWQ1fknpvDSsQRA" target="_blank"><i className="fa-brands fa-youtube" style={{color: brandColor}}></i></a>
           </div>
           <div className="copyright-container">
             <i className="fa-regular fa-copyright"></i>
@@ -26,3 +26,4 @@ const Footer = (): JSX.Element => {
 }
 
 export { Footer }
+
