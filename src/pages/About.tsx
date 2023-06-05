@@ -1,4 +1,5 @@
 import { ButtonToServices } from '../components/ButtonToServices/ButtonToServices'
+import CarouselComponent from '../components/Carousel/Carousel'
 import data from '../translation/spanish.json'
 
 const About = (): JSX.Element => {
@@ -19,10 +20,10 @@ const About = (): JSX.Element => {
                 </section>
             </div>
             <div className='about-values'>
-                <section className='title'>
-                    {about.VALUES.map((item) => {
+                {/*<section className='title'>
+                     {about.VALUES.map((item) => {
                         return (
-                            <div>
+                             <div>
                                 <h2>{item.title}</h2>
                                 <section className='description'>
                                     <p>{item.description}</p>
@@ -30,10 +31,12 @@ const About = (): JSX.Element => {
                                         <img alt='nav'/>
                                     </figure>
                                 </section>
-                            </div>
+                            </div> 
                         )
-                    })}
-                </section>
+                    })} 
+                   
+                </section>*/}
+                <CarouselComponent />
                 
 
 

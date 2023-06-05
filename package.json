@@ -13,8 +13,10 @@
   "dependencies": {
     "hamburger-react": "^2.5.0",
     "jsdom": "^22.1.0",
+    "pure-react-carousel": "^1.30.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.11.2"
   },
   "devDependencies": {
