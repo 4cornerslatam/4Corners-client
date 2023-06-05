@@ -32,4 +32,19 @@ footer {
             padding-right: .5rem;
         }
     }
+
+    @media only screen and (min-width: 768px) {
+        .social-media_container {
+            width: 60rem;
+            margin: 0 auto;
+
+            i {
+                font-size: 3.5rem;
+            }
+        }
+
+        .copyright-container {
+            display: none;
+        }
+    }
 }
