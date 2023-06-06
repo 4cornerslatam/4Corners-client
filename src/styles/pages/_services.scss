@@ -1,0 +1,32 @@
+.main-services {
+   .services-intro {
+    width: 100%;
+    padding-top: 10rem;
+      .services-title {
+        width: 90%;
+        margin: 0 auto;
+        h2 {
+            font-size: 4rem;
+            font-weight: 900;
+            color: $base-blue;
+            text-align: right;
+        }
+        :nth-child(2) {
+            text-transform: lowercase;
+        }
+      }
+
+      .services-description {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 1rem;
+        p {
+            font-family: $secondary-font;
+            font-size: 1.4rem;
+            font-weight: 300;
+            line-height: 2rem;
+            text-align: center;
+        }
+      }
+   }
+}

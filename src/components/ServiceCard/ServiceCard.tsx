@@ -9,8 +9,8 @@ interface ServiceCardProps {
 const ServiceCard: React.FC <ServiceCardProps> = ({id, title, description}) => {
     return (
         <div className={`service service${id}`}>
-        <p>{title}</p>
-        <p>{description}</p>
+        <p className="service-title">{title}</p>
+        <p className="service-description">{description}</p>
       </div>
     )
 }

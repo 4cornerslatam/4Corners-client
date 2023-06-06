@@ -6,7 +6,7 @@ const Services: React.FC = () => {
   const services = data.services;
 
   return(
-    <main>
+    <main className='main-services'>
     <section className='services-intro'>
       <div className='services-title'>
         <h2>{services.TITLE.titleLine1}</h2>
