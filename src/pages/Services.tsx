@@ -6,7 +6,7 @@ const Services: React.FC = () => {
   const services = data.services;
 
   return(
-    <>
+    <main>
     <section className='services-intro'>
       <div className='services-title'>
         <h2>{services.TITLE.titleLine1}</h2>
@@ -20,6 +20,7 @@ const Services: React.FC = () => {
       <div className='cards-container'>
         {services.PACKS.map(pack => 
         (<ServiceCard 
+          key={pack.id}
           id={pack.id}
           title={pack.title}
           description={pack.description}
@@ -27,7 +28,7 @@ const Services: React.FC = () => {
         )}
       </div>
     </section>
-    </>
+    </main>
   )
 }
 

@@ -1,9 +1,9 @@
 // UI settings
 @import './base/settings';
 @import './base/reset';
+@import './base/main';
 
 //Components
-@import './components/layout';
 @import './components/header';
 @import './components/navbarMovile';
 @import './components/footer';
@@ -16,6 +16,7 @@
 //Pages
 @import './pages/home';
 @import './pages/about';
+@import './pages/services';;
 @import './pages/team';
 
 
