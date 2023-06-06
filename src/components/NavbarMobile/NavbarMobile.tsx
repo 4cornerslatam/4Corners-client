@@ -1,6 +1,6 @@
 import { NavbarOptionsList } from '../NavbarOptionsList/NavbarOptionsList';
 
-function NavbarMobile() {
+const NavbarMobile = (): JSX.Element => {
     return(
         <nav className='navbar-mobile'>
             <NavbarOptionsList />
