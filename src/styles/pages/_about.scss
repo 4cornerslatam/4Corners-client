@@ -1,6 +1,6 @@
 .about{
     width: 100vw;
-    height: calc(100vh - 10.5rem);
+    height: calc(100vh - 13.5rem);
     display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -76,6 +76,87 @@
     &-values{
         height: 45%;
         width: 100%;
-
     }
+}
+
+// Media query mobile
+@media only screen and (max-width: 767px) {
+    
+}
+
+// Media query iPad
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .about{
+        display: flex;
+        flex-direction: row;
+        &-info{
+            height: 80%;
+            width: 50%;
+            padding: 0 0 0 6rem;
+            .title{
+                h1{
+                    font-size: 60px;
+                    line-height: 50px;
+                }
+            }
+    
+            .description{
+                height: 60%;
+
+                p{
+                    font-size: 18px;
+                    line-height: 30px;
+                    letter-spacing: 0.05em;             
+                }
+            }
+            .button{
+                height: 20%;
+            }
+        }
+        &-values{
+            height: 80%;
+            width: 50%;
+        }
+    }
+    
+}
+// Media query other
+@media only screen and (min-width: 1024px) {
+    .about{
+        display: flex;
+        flex-direction: row;
+        &-info{
+            height: 80%;
+            width: 50%;
+            padding: 0 0 0 6rem;
+            .title{
+    
+                h1{
+                    font-size: 75px;
+                    line-height: 70px
+                }
+            }
+    
+            .description{
+               
+    
+                p{
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 30px;
+                    letter-spacing: 0.05em;   
+                }
+    
+            }
+            .button{
+                height: 25%;
+                align-items: flex-start;
+            }
+        }
+        &-values{
+            height: 60%;
+            width: 50%;
+        }
+    }
+    
 }

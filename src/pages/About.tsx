@@ -7,19 +7,19 @@ const About = (): JSX.Element => {
     
     return (
         <div className='about'>
-            <div className='about-info'>
-                <section className='title'>
+            <section className='about-info'>
+                <div className='title'>
                     <h1>{about.TITLE.titleLine1}</h1>
                     <h1>{about.TITLE.titleLine2.toLocaleLowerCase()}</h1>
-                </section>
-                <section className='description'>
+                </div>
+                <div className='description'>
                     <p>{about.DESCRIPTION}</p>
-                </section>
-                <section className='button'>
+                </div>
+                <div className='button'>
                     <ButtonToServices />
-                </section>
-            </div>
-            <div className='about-values'>
+                </div>
+            </section>
+            <section className='about-values'>
                 {/*<section className='title'>
                      {about.VALUES.map((item) => {
                         return (
@@ -40,7 +40,7 @@ const About = (): JSX.Element => {
                 
 
 
-            </div>
+            </section>
         </div>
     )
 }
