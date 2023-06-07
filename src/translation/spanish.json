@@ -82,8 +82,9 @@
         "TEAM":[
             {
                 "id":"1",
-                "name": "Bere",
-                "subtitle": "Desarrolladora Front-end - Ingeniera en comunicaciones y electrónica",
+                "name": "Bere Hernández",
+                "subtitle1": "Web developer",
+                "subtitle2": "Ingeniera en comunicaciones y electrónica",
                 "description": "Soy una ingeniera de profesión y desarrolladora front-end por elección, perteneciente a la comunidad indígena Hñahñu. A lo largo de mi vida, he buscado el crecimiento personal a través del aprendizaje continuo y la práctica. El desarrollo web me permite aplicar esta mentalidad en la creación de tecnología, generando un impacto positivo en la vida de los demás.",
                 "linkedinUrl":"https://www.linkedin.com/in/beresdev/"
             },

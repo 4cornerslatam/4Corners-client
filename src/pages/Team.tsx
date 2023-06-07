@@ -1,6 +1,7 @@
 import Slider from 'react-slick';
 import { ButtonToServices } from '../components/ButtonToServices/ButtonToServices';
 import data from '../translation/spanish.json';
+import { MembersCard } from '../components/MembersCard/MembersCard';
 
 const Team = (): JSX.Element => {
 	const team = data.team;
@@ -24,25 +25,11 @@ const Team = (): JSX.Element => {
 				<ButtonToServices />
 			</div>
 			<div className='carousel'>
-				<Slider {...settings}>
-					<div className='slick-slide'>
-						<div>
-							<span>
-								<a
-									href='http://linkedin.com/company/4corners-coding-dreams'
-									target='_blank'>
-									<i className='fa-brands fa-linkedin-in' style={{ color: 'white' }}></i>
-								</a>
-							</span>
-							<img />
-						</div>
-						<div>
-							<p></p>
-							<p></p>
-							<button></button>
-						</div>
-					</div>
-				</Slider>
+				{/* <Slider {...settings}> */}
+				<div>
+					<MembersCard />
+				</div>
+				{/* </Slider> */}
 			</div>
 		</section>
 	);
