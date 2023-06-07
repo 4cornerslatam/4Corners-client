@@ -1,0 +1,66 @@
+.service {
+    flex-grow: 1;
+    position: relative;
+    transition: transform 0.5s;
+    border:.2rem solid $base-blue;
+    p {
+        text-align: center;
+    }
+
+    &:hover {
+        &.service1 {
+          left: 2rem;
+          transform: scale(1.3);
+          z-index: 1;
+        }
+
+        &.service1:hover ~ .service2,
+        &.service1:hover ~ .service3 {
+            transform: translateX(10rem) rotateX(-30deg);
+        }
+
+        &.service2 {
+            transform: scale(1.2);
+            z-index: 1;
+        }
+
+        &.service3:hover ~ .service1,
+        &.service3:hover ~ .service2 {
+          transform: translateX(-50rem) rotateX(30deg);
+        }
+        
+        &.service3 {
+            right: 3rem;
+            transform: scale(1.3);
+            z-index: 1;
+        }
+    }
+}
+
+.service2 {
+    width: 19rem;
+    height:28rem;
+    background-color: $main-white;
+    border-radius: 1rem .5rem;
+    box-shadow: -.6rem -.6rem .1rem $base-blue;
+}
+
+.service1, 
+.service3 {
+    width:12rem;
+    height: 18rem;
+    position: relative;
+    border-radius: 1rem .5rem;
+    background-color: $base-blue;
+    box-shadow: 
+    .5rem .6rem .1rem $main-white,
+    .5rem .6rem .1rem .2rem $base-blue;
+}
+
+.service1 {
+    left: -5rem;
+}
+
+.service3 {
+    right: -5rem;
+}
