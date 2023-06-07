@@ -20,26 +20,7 @@ const About = (): JSX.Element => {
                 </div>
             </section>
             <section className='about-values'>
-                {/*<section className='title'>
-                     {about.VALUES.map((item) => {
-                        return (
-                             <div>
-                                <h2>{item.title}</h2>
-                                <section className='description'>
-                                    <p>{item.description}</p>
-                                    <figure className='icon'>
-                                        <img alt='nav'/>
-                                    </figure>
-                                </section>
-                            </div> 
-                        )
-                    })} 
-                   
-                </section>*/}
                 <CarouselComponent />
-                
-
-
             </section>
         </div>
     )

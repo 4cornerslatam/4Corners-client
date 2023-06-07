@@ -76,6 +76,10 @@
     &-values{
         height: 45%;
         width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: $base-blue;
     }
 }
 
@@ -154,8 +158,9 @@
             }
         }
         &-values{
-            height: 60%;
+            height: 80%;
             width: 50%;
+            
         }
     }
     
