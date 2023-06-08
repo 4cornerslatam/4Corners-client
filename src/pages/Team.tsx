@@ -1,4 +1,4 @@
-import Slider from 'react-slick';
+// import Slider from 'react-slick';
 import { ButtonToServices } from '../components/ButtonToServices/ButtonToServices';
 import data from '../translation/spanish.json';
 import { MembersCard } from '../components/MembersCard/MembersCard';
@@ -27,7 +27,10 @@ const Team = (): JSX.Element => {
 			<div className='carousel'>
 				{/* <Slider {...settings}> */}
 				<div>
-					<MembersCard />
+					<MembersCard memberId='1' />
+					<MembersCard memberId='2' />
+					<MembersCard memberId='3' />
+					<MembersCard memberId='4' />
 				</div>
 				{/* </Slider> */}
 			</div>
