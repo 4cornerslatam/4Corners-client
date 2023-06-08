@@ -1,0 +1,43 @@
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.team-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Poppins';
+	font-style: normal;
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
+	color: $base-blue;
+	line-height: 100px;
+    margin: 70px;
+}
+
+.linea-1 {
+	font-weight: 900;
+	font-size: 96px;
+}
+
+.linea-2 {
+	font-weight: 700;
+	font-size: 48px;
+}
+
+.team-paragraph {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 50px;
+	width: 70%;
+	height: 205px;
+}
