@@ -1,6 +1,21 @@
-const CarouselCard = () : JSX.Element => {
+type Props = {
+    title: string,
+    description: string
+}
+    
+const CarouselCard = (props:Props): JSX.Element => {
+    const { title, description } = props
+    
     return (
-        <h1>hi</h1>
+
+        <div className='slideCard'>
+            <section className='title'>
+                <h2>{title}</h2>
+            </section>
+            <section className='description'>
+                <p>{description}</p>
+            </section>
+        </div>
         
     )
 }

@@ -20,7 +20,9 @@ const About = (): JSX.Element => {
                 </div>
             </section>
             <section className='about-values'>
-                <CarouselComponent />
+            <div className='text'>
+                    <CarouselComponent />
+            </div>
             </section>
         </div>
     )

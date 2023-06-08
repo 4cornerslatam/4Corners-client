@@ -45,6 +45,7 @@
                 font-weight: 300;
                 line-height: 20px;
                 letter-spacing: 0.05em;
+                padding-top: 2%;
             }
 
         }
@@ -79,7 +80,12 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        background-color: $base-blue;
+        
+        
+        .text{
+            height: 100%;
+            width: 100%;
+        }
     }
 }
 
