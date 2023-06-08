@@ -1,6 +1,6 @@
 .service {
-    flex-grow: 1;
     position: relative;
+    top: -7rem;
     transition: transform 0.5s;
     border:.2rem solid $base-blue;
     p {

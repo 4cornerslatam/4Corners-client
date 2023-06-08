@@ -24,8 +24,8 @@ const Services: React.FC = () => {
           id={pack.id}
           title={pack.title}
           description={pack.description}
-        />)
-        )}
+          />)
+          )}
       </div>
     </section>
     </main>
