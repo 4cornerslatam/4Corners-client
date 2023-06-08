@@ -1,0 +1,110 @@
+.carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  
+    .carousel-wrapper {
+        width: 85%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        overflow: hidden;
+
+        .carousel-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+            height: 100%;
+            transition: transform 500ms ease-in-out;
+
+        .carousel-title {
+            width: 75%;
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $base-pink;
+            border-radius: 12px 0px 0px 12px;
+  
+            h1 {
+                width: 80%;
+                height: 100%;
+                color: $main-white;
+                padding-right: 15%;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 14px;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                text-align: left;
+            }
+        }
+        
+        .carousel-description {
+            width: 100%;
+            height: 80%;
+            background-color: $base-blue;
+            color: $main-white;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+            box-shadow: $shadows;
+            border-radius: 15px 0px 0px 15px;           
+
+            p {
+                width: 100%;
+                padding: 0 15% 0 5%;
+                font-family: $secondary-font;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: right;
+            }
+        }
+  
+        .fade-enter {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+  
+        .fade-enter-active {
+          opacity: 1;
+          transform: translateX(0);
+          transition: opacity 500ms, transform 300ms;
+        }
+  
+        .fade-exit {
+          opacity: 1;
+          transform: translateX(0);
+        }
+  
+        .fade-exit-active {
+          opacity: 0;
+          transform: translateX(-100%);
+          transition: opacity 500ms, transform 300ms;
+        }
+      }
+    }
+    button {
+        position: absolute;
+        top: 78.5%;
+        width: 12%;
+        background: none;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        text-align: center;
+  
+        span {
+            font-size: 30px;
+            color: $base-pink;
+        }
+    }
+}

@@ -11,6 +11,7 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "hamburger-react": "^2.5.0",
     "jsdom": "^22.1.0",

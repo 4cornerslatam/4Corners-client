@@ -1,5 +1,5 @@
 import { ButtonToServices } from '../components/ButtonToServices/ButtonToServices'
-import CarouselComponent from '../components/Carousel/Carousel'
+import CarouselComponent from '../components/CarouselAbout/CarouselAbout'
 import data from '../translation/spanish.json'
 
 const About = (): JSX.Element => {
@@ -21,11 +21,11 @@ const About = (): JSX.Element => {
             </section>
             <section className='about-values'>
             <div className='text'>
-                    <CarouselComponent />
+                <CarouselComponent />      
             </div>
             </section>
         </div>
     )
 }
 
-export { About }
+export { About } 
