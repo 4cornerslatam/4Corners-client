@@ -37,28 +37,28 @@ const CarouselComponent = () => {
                         </SwitchTransition>
                     </div>
                     <div className='carousel-description'>
-                    <SwitchTransition mode='out-in'>
-                        <CSSTransition
-                            key={items[index].id}
-                            classNames={{
-                            enter: 'fade-enter',
-                            enterActive: 'fade-enter-active',
-                            exit: 'fade-exit',
-                            exitActive: 'fade-exit-active',
-                            }}
-                            timeout={300}
-                        >
-                            <p>{items[index].description}</p>
-                        </CSSTransition> 
-                    </SwitchTransition>  
-                </div>
-            </div>      
-        </div>
-        <button onClick={()=>handleNext()}>
-                <FontAwesomeIcon icon={faChevronRight} fade style={{ color: "#c54f81", }} />
+                        <SwitchTransition mode='out-in'>
+                            <CSSTransition
+                                key={items[index].id}
+                                classNames={{
+                                enter: 'fade-enter',
+                                enterActive: 'fade-enter-active',
+                                exit: 'fade-exit',
+                                exitActive: 'fade-exit-active',
+                                }}
+                                timeout={300}
+                            >
+                                <p>{items[index].description}</p>
+                            </CSSTransition> 
+                        </SwitchTransition>  
+                    </div>
+                </div>      
+            </div>
+            <button onClick={()=>handleNext()}>
+                <span>+</span>
             </button>
-    </div>
-  );
+        </div>
+    );
 };
 
 export default CarouselComponent;
