@@ -1,8 +1,6 @@
 // carrusel 7
 import { useState, useRef } from 'react';
 import { SwitchTransition, CSSTransition } from 'react-transition-group';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import data from '../../translation/spanish.json';
 
 const CarouselComponent = () => {
@@ -54,8 +52,8 @@ const CarouselComponent = () => {
                     </div>
                 </div>      
             </div>
-            <button onClick={()=>handleNext()}>
-                <span>+</span>
+            <button onClick={() => handleNext()}>
+                <i className="fa-solid fa-chevron-right fa-fade"  ></i>
             </button>
         </div>
     );

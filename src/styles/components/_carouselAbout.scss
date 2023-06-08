@@ -103,10 +103,10 @@
         outline: none;
         text-align: center;
         box-shadow: none;
-  
-        span {
-            font-size: 30px;
+
+        i{
             color: $base-pink;
+            font-size: 2rem;
         }
     }
 }
@@ -116,9 +116,11 @@
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .carousel{
 
-      button {
-        top: 55%;
-        width: 6%;
+    button {
+        position: absolute;
+        top: 60%;
+        width: 7%;
+        
       }
     }
 }
@@ -150,13 +152,14 @@
                 }
             }
         }
-        .button{
+        button{
             position: absolute;
-            top: 68%;
+            top: 70%;
             width: 8%;
-            .span{
-                font-size: 50px;
+            i{
+                font-size: 4rem;
             }
+           
         }
     }
 }
