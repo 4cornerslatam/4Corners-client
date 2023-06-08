@@ -8,7 +8,7 @@ const ButtonToServices = (): JSX.Element => {
 	};
 
 	return (
-		<button onClick={handleClick}>
+		<button className='button-services' onClick={handleClick}>
 			<p>Saber +</p>
 		</button>
 	);

@@ -21,17 +21,17 @@ const Team = (): JSX.Element => {
 			<div className='team-paragraph'>
 				<p>{team.DESCRIPTION}</p>
 			</div>
-			<div className='home-button'>
+			<div className='team-button'>
 				<ButtonToServices />
 			</div>
 			<div className='carousel'>
 				{/* <Slider {...settings}> */}
-				<div>
-					<MembersCard memberId='1' />
-					<MembersCard memberId='2' />
-					<MembersCard memberId='3' />
-					<MembersCard memberId='4' />
-				</div>
+
+				<MembersCard memberId='1' />
+				<MembersCard memberId='2' />
+				<MembersCard memberId='3' />
+				<MembersCard memberId='4' />
+
 				{/* </Slider> */}
 			</div>
 		</section>
