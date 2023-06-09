@@ -1,12 +1,185 @@
-.carousel {
-	width: 100%;
-	
-	.slick-slide {
-	  text-align: center;
-	  height: 200px;
-	  background: #ddd;
-	  display: flex;
-	  align-items: center;
-	  justify-content: center;
-	}
-  }
+.about{
+    width: 100vw;
+    height: calc(100vh - 13.5rem);
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    justify-content: center;   
+    
+    &-info{
+        height: 55%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
+        padding: 0 4rem;
+
+        .title{
+            height: 25%;
+            width: 100%;
+            color: $base-blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            h1{
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 35px
+            }
+        }
+
+        .description{
+            height: 50%;
+            display: flex;
+            align-items: center;
+
+            p{
+                font-size: 14px;
+                font-family: $secondary-font;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 16px;
+                letter-spacing: 0.05em;
+                padding-top: 2%;
+            }
+
+        }
+        .button{
+            height: 25%;
+            width:  100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            button{
+                height: 60%;
+                width: 40%;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px;
+
+                p{
+                    padding: 0;
+                    font-size: 18px;
+                    color: #C54F81;
+                    font-family: "Roboto", sans-serif;
+                }
+            } 
+        }
+    }
+
+    &-values{
+        height: 45%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .text{
+            height: 90%;
+            width: 100%;
+        }
+    }
+}
+
+// Media query iPad
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .about{
+        display: flex;
+        flex-direction: row;
+
+        &-info{
+            height: 80%;
+            width: 50%;
+            padding: 0 0 0 6rem;
+            .title{
+
+                h1{
+                    font-size: 50px;
+                    line-height: 40px;
+                }
+            }
+    
+            .description{
+                height: 60%;
+
+                p{
+                    font-size: 14px;
+                    line-height: 25px;
+                    letter-spacing: 0.05em;             
+                }
+            }
+            .button{
+
+                button{
+                    height: 60%;
+                    width: 45%;
+                }
+            }
+        }
+        &-values{
+            height: 80%;
+            width: 50%;
+
+            .text{
+                height: 65%;
+            }
+        }
+    }
+    
+}
+// Media query other
+@media only screen and (min-width: 1024px) {
+    .about{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+
+        &-info{
+            height: 90%;
+            width: 50%;
+            padding: 0 6rem 0 8rem;
+
+            .title{
+    
+                h1{
+                    font-size: 60px;
+                    line-height: 55px
+                }
+            }
+            .description{
+    
+                p{
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 30px;
+                    letter-spacing: 0.05em;   
+                }
+    
+            }
+            .button{
+                height: 25%;
+                align-items: flex-start;
+
+                button{
+                    height: 50%;
+                    width: 35%;
+                    
+                }
+            }
+        }
+        &-values{
+            height: 80%;
+            width: 50%;
+            .text{
+                width: 100%;
+            }
+            
+        }
+    }   
+}
