@@ -1,6 +1,6 @@
 import React from 'react';
 import data from '../translation/spanish.json';
-import { ServiceCard } from '../components/ServiceCard/ServiceCard';
+import { CardCarousel } from '../components/CardCarousel/CardCarousel';
 
 const Services: React.FC = () => {
   const services = data.services;
@@ -17,16 +17,7 @@ const Services: React.FC = () => {
       </div>
     </section>
     <section className='services-cards'>
-      <div className='cards-container'>
-        {services.PACKS.map(pack => 
-        (<ServiceCard 
-          key={pack.id}
-          id={pack.id}
-          title={pack.title}
-          description={pack.description}
-          />)
-          )}
-      </div>
+      <CardCarousel />
     </section>
     </main>
   )
