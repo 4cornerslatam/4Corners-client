@@ -11,7 +11,9 @@
     .5rem .6rem .1rem .2rem $base-blue;
 
     p {
+        font-family: $secondary-font;
         text-align: center;
+        padding-top: 2rem;
         color: $main-black;
         font-size: 2rem;
     }
