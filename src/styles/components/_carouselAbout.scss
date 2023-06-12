@@ -1,0 +1,173 @@
+.carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  
+    .carousel-wrapper {
+        width: 85%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        overflow: hidden;
+
+        .carousel-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+            height: 100%;
+            transition: transform 500ms ease-in-out;
+
+            .carousel-title {
+                width: 75%;
+                height: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: $base-pink;
+                border-radius: 12px 0px 0px 12px;
+                
+                position: relative;
+                top: 10%;
+                height: 40%; 
+                z-index: 1;
+    
+                h1 {
+                    width: 85%;
+                    height: 100%;
+                    color: $main-white;
+                    padding-right: 15%;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 14px;
+                    line-height: 20px;
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+                }
+            }
+            
+            .carousel-description {
+                width: 100%;
+                height: 120%;
+                padding-top: 5%;
+                background-color: $base-blue;
+                color: $main-white;
+                display: flex;
+                flex-direction: column;
+                align-items: center; 
+                justify-content: center;
+                box-shadow: 0px 4px 4px $shadows;
+                border-radius: 15px 0px 0px 15px; 
+                position: relative;
+    
+                p {
+                    width: 100%;
+                    padding: 0 15% 0 5%;
+                    font-family: $secondary-font;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: right;
+                }
+            }
+    
+            .fade-enter {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+    
+            .fade-enter-active {
+                opacity: 1;
+                transform: translateX(0);
+                transition: opacity 500ms, transform 300ms;
+            }
+    
+            .fade-exit {
+                opacity: 1;
+                transform: translateX(0);
+            }
+    
+            .fade-exit-active {
+                opacity: 0;
+                transform: translateX(-100%);
+                transition: opacity 500ms, transform 300ms;
+            }
+        }
+    }
+
+    button {
+        position: absolute;
+        top: 78.5%;
+        width: 12%;
+        background: none;
+        border: none;
+        cursor: pointer;
+        animation: none;
+        outline: none;
+        text-align: center;
+        box-shadow: none;
+
+        i{
+            color: $base-pink;
+            font-size: 2rem;
+        }
+    }
+}
+
+// Media query iPad
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .carousel{
+
+    button {
+        position: absolute;
+        top: 60%;
+        width: 7%;
+        i{
+            font-size: 3rem;
+        }
+      }
+    }
+}
+
+// Media query other
+@media only screen and (min-width: 1024px) {
+    .carousel{
+        .carousel-wrapper{
+            width: 100%;
+
+            .carousel-content{
+                .carousel-title{
+                    h1{
+                        font-size: 20px;
+                        line-height: 30px;
+                        letter-spacing: 0.05em;
+                        padding: 0 15% 0 5%
+                    }
+                }
+                .carousel-description{
+                    p{
+                        font-weight: 300;
+                        font-size: 20px;
+                        line-height: 30px;
+                        letter-spacing: 0.05em;
+                        padding: 0 15% 0 10%
+                    }
+                }
+            }
+        }
+        button{
+            position: absolute;
+            top: 70%;
+            width: 8%;
+
+            i{
+                font-size: 4rem;
+            }  
+        }
+    }
+}

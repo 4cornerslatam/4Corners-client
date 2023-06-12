@@ -22,7 +22,7 @@
             "titleLine1":"ACERCA",  
             "titleLine2":"DE"
         },
-        "DESCRIPTION": "4 Corners es un grupo formado por cuatro desarrolladoras web con diversos backgrounds profesionales que nos hemos unido con un propósito común: continuar aprendiendo juntas y compartir nuestros conocimientos mientras ofrecemos soluciones digitales estéticas, prácticas y amigables para las personas.",
+        "DESCRIPTION": "Somos es un grupo formado por cuatro desarrolladoras web con diversos backgrounds profesionales que nos hemos unido con un propósito común: continuar aprendiendo juntas y compartir nuestros conocimientos mientras ofrecemos soluciones digitales estéticas, prácticas y amigables para las personas.",
         "VALUES": [
             {
                 "id":"1",
@@ -31,7 +31,7 @@
             },
             {
                 "id":"2",
-                "title": "Talentos diversos",
+                "title": "Tenemos talentos diversos",
                 "description":"Nuestros backgrounds diversos, nos permiten impulsar la creatividad, la innovación y la excelencia en nuestro trabajo. Creemos que la verdadera magia sucede cuando diferentes mentes, cada una con diferentes experiencias e historias,  se unen en busca de un objetivo común."
             },
             {
@@ -41,7 +41,7 @@
             },
             {
                 "id":"4",
-                "title": "Creemos en la importancia de unir fuerzas para impulsar el crecimiento colectivo",
+                "title": "Unimos fuerzas para crecer colectivamente",
                 "description":"Estamos convencidas de que al compartir nuestras experiencias y conocimientos, creamos un ambiente de apoyo y ayuda mutua. Nos convertimos en recursos para otros y, a su vez, nos beneficiamos y aprendemos de las ideas y perspectivas de quienes nos rodean."
             }
         ],
