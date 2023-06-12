@@ -15,9 +15,9 @@ const MembersCard: React.FC<MembersCardProps> = ({ memberId }) => {
 		return null;
 	}
 	return (
-		<section>
+		<section className='members-cards'>
 			<ReactCardFlip isFlipped={flip} flipDirection='horizontal'>
-				<div className='card card-front'>
+				<div className='card-front'>
 					<div className='content'>
 						<div className='card-content'>
 							<div className='card-image'>

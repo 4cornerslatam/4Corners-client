@@ -1,52 +1,198 @@
-section {
+.team {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	.team-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+		.team-title {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			font-family: 'Poppins';
+			font-style: normal;
+			letter-spacing: 0.3em;
+			text-transform: uppercase;
+			margin-top: 5rem;
+
+			h1.team-title-linea-1 {
+				color: $base-blue; // Replace with your desired color value
+				font-weight: 900;
+				font-size: 96px;
+			}
+
+			h1.team-title-linea-2 {
+				color: $base-blue; // Replace with your desired color value
+				font-weight: 700;
+				font-size: 48px;
+			}
+		}
+
+		.team-paragraph {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 300;
+			font-size: 24px;
+			line-height: 5rem;
+			width: 60%;
+			height: auto;
+			margin: 0.1rem auto;
+		}
+
+		.team-button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			margin: -6rem auto;
+		}
+	}
+
+	.team-members {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 8rem;
+		margin-top: 9rem;
+	}
+
+	.mobile {
+		display: none;
+	}
 }
 
-.team-title {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Poppins';
-	font-style: normal;
-	letter-spacing: 0.3em;
-	text-transform: uppercase;
-	color: $base-blue;
-	line-height: 100px;
-    margin: 5rem;
+// Media query mobile
+@media only screen and (max-width: 767px) {
+	.team {
+		.team-info {
+			.team-title {
+				font-family: 'Poppins';
+				font-style: normal;
+				letter-spacing: 0.3em;
+				text-transform: uppercase;
+				line-height: 50px;
+				margin-top: 2rem;
+
+				h1.team-title-linea-1 {
+					color: $base-blue; // Replace with your desired color value
+					font-weight: 900;
+					font-size: 35px;
+				}
+
+				h1.team-title-linea-2 {
+					color: $base-blue; // Replace with your desired color value
+					font-weight: 700;
+					font-size: 15px;
+					margin-top: -1rem;
+
+				}
+			}
+			.team-paragraph {
+				font-size: 12px;
+				line-height: 2rem;
+				width: 350px;
+				height: auto;
+				margin: 0.1rem auto;
+			}
+			.team-button {
+				margin: -4rem auto;
+				button {
+					p {
+						padding: 15px 35px;
+						font-size: 18px;
+						line-height: 2rem;
+					}
+				}
+			}
+		}
+		.team-members {
+			gap: 1rem;
+			margin-top: 4rem;
+			margin-bottom: 0;
+		}
+		.desktop {
+			display: none;
+		}
+		.mobile {
+			display: block;
+		}
+	}
 }
 
-.linea-1 {
-	font-weight: 900;
-	font-size: 96px;
+// Media query iPad
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.team-title {
+		&-linea-1 {
+			font-size: 72px;
+		}
+
+		&-linea-2 {
+			font-size: 36px;
+		}
+	}
+
+	.team-paragraph {
+		font-size: 14px;
+		line-height: 2rem;
+		width: 90%;
+		height: auto;
+		margin: 0.1rem auto;
+	}
+	.team-button {
+		margin: -3rem auto;
+	}
+	.team-members {
+		gap: 1rem;
+		margin-top: 9rem;
+	}
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
 }
 
-.linea-2 {
-	font-weight: 700;
-	font-size: 48px;
-}
+// Media query other
+@media only screen and (min-width: 1024px) {
+	.team-title {
+		&-linea-1 {
+			font-size: 96px;
+		}
 
-.team-paragraph {
-	display: flex;
-	align-items: center;
-	text-align: center;
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 300;
-	font-size: 24px;
-	line-height: 5rem;
-	width: 70%;
-	height: 15rem;
-}
+		&-linea-2 {
+			font-size: 48px;
+		}
+	}
 
-.carousel{
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    justify-content: space-between;
-    gap:3rem;
-    margin: 3rem;
+	.team-paragraph {
+		font-size: 14px;
+		line-height: 2rem;
+		width: 90%;
+		height: auto;
+		margin: 0.1rem auto;
+	}
+	.team-button {
+		margin: -3rem auto;
+	}
+	.team-members {
+		gap: 2rem;
+		margin-top: 9rem;
+	}
+	.mobile {
+		display: none;
+	}
 }
