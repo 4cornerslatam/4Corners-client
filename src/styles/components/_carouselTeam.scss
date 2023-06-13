@@ -1,0 +1,57 @@
+@import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
+/* Your custom styles for the carousel */
+
+.carousel {
+  /* Custom styles for the carousel container */
+  margin: 0 auto;
+  max-width: 300px;
+  max-height: 500px;
+}
+
+.carousel .slider-wrapper {
+  /* Custom styles for the slider wrapper */
+  overflow: hidden;
+}
+
+.carousel .slider-wrapper .slider {
+  /* Custom styles for the slider */
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel .slider-wrapper .slider .slide {
+  /* Custom styles for the individual slides */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 50px;
+}
+
+.carousel .carousel-status {
+  /* Custom styles for the carousel status */
+ display:none;
+}
+
+.carousel .control-dots {
+  /* Custom styles for the control dots */
+  display: flex;
+  justify-content: center;
+
+  .dot {
+    /* Custom styles for each control dot */
+    background-color: $main-white;
+    width: 17px;
+    height: 6px;
+    border-radius: 5px;
+    border: .5px solid $base-pink;
+    margin:0 5px;
+
+    &.selected {
+      /* Custom styles for the selected dot */
+      background-color: $base-pink;
+    }
+  }
+}
+
+/* Add more custom styles as needed */

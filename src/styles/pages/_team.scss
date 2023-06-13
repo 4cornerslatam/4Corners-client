@@ -1,43 +1,247 @@
-section {
+.team {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	.team-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+		.team-title {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			font-family: 'Poppins';
+			font-style: normal;
+			letter-spacing: 0.3em;
+			text-transform: uppercase;
+			margin-top: 5rem;
+
+			h1.team-title-linea-1 {
+				color: $base-blue; // Replace with your desired color value
+				font-weight: 900;
+				font-size: 96px;
+			}
+
+			h1.team-title-linea-2 {
+				color: $base-blue; // Replace with your desired color value
+				font-weight: 700;
+				font-size: 48px;
+			}
+		}
+
+		.team-paragraph {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 300;
+			font-size: 24px;
+			line-height: 5rem;
+			width: 60%;
+			height: auto;
+			margin: 0.1rem auto;
+		}
+
+		.team-button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+
+	.team-members {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 8rem;
+		margin-top: 9rem;
+	}
+
+	.mobile {
+		display: none;
+	}
 }
 
-.team-title {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Poppins';
-	font-style: normal;
-	letter-spacing: 0.3em;
-	text-transform: uppercase;
-	color: $base-blue;
-	line-height: 100px;
-    margin: 70px;
+// Media query mobile
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+	.team {
+		.team-info {
+			.team-title {
+				font-family: 'Poppins';
+				font-style: normal;
+				letter-spacing: 0.3em;
+				text-transform: uppercase;
+				line-height: 50px;
+				margin-top: 2rem;
+
+				h1.team-title-linea-1 {
+					color: $base-blue; // Replace with your desired color value
+					font-weight: 900;
+					font-size: 35px;
+				}
+
+				h1.team-title-linea-2 {
+					color: $base-blue; // Replace with your desired color value
+					font-weight: 700;
+					font-size: 15px;
+					margin-top: -1rem;
+
+				}
+			}
+			.team-paragraph {
+				font-size: 12px;
+				line-height: 2rem;
+				width: 350px;
+				height: auto;
+				margin: 0.1rem auto;
+			}
+			.team-button {
+				margin-top: -4rem;
+				margin-bottom: -5rem;
+				button {
+					p {
+						padding: 10px 25px;
+						font-size: 16px;
+						line-height: 2rem;
+					}
+				}
+			}
+		}
+		.team-members {
+			gap: 1rem;
+			margin-top: 4rem;
+			margin-bottom: 0;
+		}
+		.desktop {
+			display: none;
+		}
+		.mobile {
+			display: block;
+		}
+	}
 }
 
-.linea-1 {
-	font-weight: 900;
-	font-size: 96px;
+// Media query iPad
+@media only screen and (min-width: 772px) and (max-width: 1024px) {
+	.team {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	
+		.team-info {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+	
+			.team-title {
+				
+				margin-top: 3rem;
+	
+				h1.team-title-linea-1 {
+					
+					font-size: 76px;
+				}
+	
+				h1.team-title-linea-2 {
+					
+					font-size: 38px;
+				}
+			}
+	
+			.team-paragraph {
+				font-size: 22px;
+				line-height: 4rem;
+				width: 80%;
+				height: auto;
+				margin: 1rem auto;
+			}
+	
+			.team-button {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				margin: 0 auto;
+			}
+		}
+	
+		.team-members {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			gap: 1rem;
+			margin-top: 5rem;
+		}
+	
+		.mobile {
+			display: none;
+		}
+	}
 }
+// Media query other
+@media only screen and (min-width: 1024px) {
+	.team {
+	
+		.team-info {
 
-.linea-2 {
-	font-weight: 700;
-	font-size: 48px;
-}
-
-.team-paragraph {
-	display: flex;
-	align-items: center;
-	text-align: center;
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 300;
-	font-size: 24px;
-	line-height: 50px;
-	width: 70%;
-	height: 205px;
+			.team-title {
+				
+				margin-top: 4rem;
+	
+				h1.team-title-linea-1 {
+					font-size: 76px;
+				}
+	
+				h1.team-title-linea-2 {
+					font-size: 38px;
+				}
+			}
+	
+			.team-paragraph {
+				
+				font-size: 24px;
+				line-height: 5rem;
+				width: 60%;
+				height: auto;
+				margin-top: 2rem;
+			}
+	
+			.team-button {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				margin-top: -3rem;
+			}
+		}
+	
+		.team-members {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			gap: 4rem;
+			margin-top: 9rem;
+		}
+	
+		.mobile {
+			display: none;
+		}
+	}
 }
