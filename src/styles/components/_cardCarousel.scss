@@ -14,14 +14,16 @@
         font-family: $secondary-font;
         text-align: center;
         padding-top: 2rem;
-        color: $main-black;
+        color: $main-white;
         font-size: 2rem;
     }
 
     &.highest-z-index {
         background-color: $main-white;
         box-shadow: -.6rem -.6rem .1rem $base-blue;
+
+        p {
+            color: $base-pink;
+        }
     }
 }
-
-

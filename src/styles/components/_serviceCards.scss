@@ -1,0 +1,5 @@
+.service-cards-container {
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
+}

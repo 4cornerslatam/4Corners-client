@@ -1,6 +1,7 @@
 import React from 'react';
 import data from '../translation/spanish.json';
 import { CardCarousel } from '../components/CardCarousel/CardCarousel';
+import { ServiceCards } from '../components/ServicesCards/ServiceCards';
 
 const Services: React.FC = () => {
   const services = data.services;
@@ -18,6 +19,7 @@ const Services: React.FC = () => {
     </section>
     <section className='services-cards'>
       <CardCarousel />
+      <ServiceCards />
     </section>
     </main>
   )
