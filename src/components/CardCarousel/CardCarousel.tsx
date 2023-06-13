@@ -19,7 +19,6 @@ interface Service {
       carouselElements.forEach((element) => {
         const zIndex = parseInt(window.getComputedStyle(element).getPropertyValue('z-index') || '0', 10);
         const id = element.getAttribute('id');
-        console.log(id, zIndex);
         if (zIndex > highestZIndexRef.current) {
           highestZIndexRef.current = zIndex;
           setSelected(id || '');
@@ -32,10 +31,7 @@ interface Service {
       const target = event.target as HTMLDivElement;
       const id = target.id
       setSelected(id);
-    };
-  
-    console.log(selected);
-  
+    };  
     return (
       <>
         <div className='services-container' onClick={handleClick}>
