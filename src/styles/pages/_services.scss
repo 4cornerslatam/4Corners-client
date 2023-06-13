@@ -46,10 +46,52 @@
       display: flex;
       justify-content: center;
       border-top: 14rem solid $base-pink;
-
-      @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        display: none
-     }
    }
+  }
+}
+
+// tablet
+
+@media only screen and (min-width: 768px) {
+  .main-services {
+    .services-intro {
+      .services-title {
+        h2 {
+          font-size: 6rem; 
+        }
+      }
+      .services-description {
+        p {
+          font-size: 2rem;
+          line-height: 3rem;
+        }
+      }
+    }
+    .services-cards {
+      position: relative;
+      top: 2rem;
+      .services-container {
+        display: none
+      }
+    }
+  }
+}
+
+//desktop
+
+@media only screen and (min-width: 1025px){
+  .main-services {
+    .services-intro {
+      .services-title {
+        h2 {
+          font-size: 7rem; 
+        }
+      }
+      .services-description {
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
   }
 }
