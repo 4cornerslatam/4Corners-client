@@ -24,13 +24,13 @@
 			margin-top: 5rem;
 
 			h1.team-title-linea-1 {
-				color: $base-blue; // Replace with your desired color value
+				color: $base-blue;
 				font-weight: 900;
 				font-size: 96px;
 			}
 
 			h1.team-title-linea-2 {
-				color: $base-blue; // Replace with your desired color value
+				color: $base-blue;
 				font-weight: 700;
 				font-size: 48px;
 			}
@@ -87,17 +87,16 @@
 				margin-top: 2rem;
 
 				h1.team-title-linea-1 {
-					color: $base-blue; // Replace with your desired color value
+					color: $base-blue;
 					font-weight: 900;
 					font-size: 35px;
 				}
 
 				h1.team-title-linea-2 {
-					color: $base-blue; // Replace with your desired color value
+					color: $base-blue;
 					font-weight: 700;
 					font-size: 15px;
 					margin-top: -1rem;
-
 				}
 			}
 			.team-paragraph {
@@ -140,29 +139,26 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-	
+
 		.team-info {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			text-align: center;
-	
+
 			.team-title {
-				
 				margin-top: 3rem;
-	
+
 				h1.team-title-linea-1 {
-					
 					font-size: 76px;
 				}
-	
+
 				h1.team-title-linea-2 {
-					
 					font-size: 38px;
 				}
 			}
-	
+
 			.team-paragraph {
 				font-size: 22px;
 				line-height: 4rem;
@@ -170,7 +166,7 @@
 				height: auto;
 				margin: 1rem auto;
 			}
-	
+
 			.team-button {
 				display: flex;
 				align-items: center;
@@ -179,7 +175,7 @@
 				margin: 0 auto;
 			}
 		}
-	
+
 		.team-members {
 			display: flex;
 			flex-direction: row;
@@ -188,7 +184,7 @@
 			gap: 1rem;
 			margin-top: 5rem;
 		}
-	
+
 		.mobile {
 			display: none;
 		}
@@ -197,31 +193,27 @@
 // Media query other
 @media only screen and (min-width: 1024px) {
 	.team {
-	
 		.team-info {
-
 			.team-title {
-				
 				margin-top: 4rem;
-	
+
 				h1.team-title-linea-1 {
 					font-size: 76px;
 				}
-	
+
 				h1.team-title-linea-2 {
 					font-size: 38px;
 				}
 			}
-	
+
 			.team-paragraph {
-				
 				font-size: 24px;
 				line-height: 5rem;
 				width: 60%;
 				height: auto;
 				margin-top: 2rem;
 			}
-	
+
 			.team-button {
 				display: flex;
 				align-items: center;
@@ -230,7 +222,7 @@
 				margin-top: -3rem;
 			}
 		}
-	
+
 		.team-members {
 			display: flex;
 			flex-direction: row;
@@ -239,7 +231,7 @@
 			gap: 4rem;
 			margin-top: 9rem;
 		}
-	
+
 		.mobile {
 			display: none;
 		}
