@@ -50,8 +50,27 @@
 
 //desktop
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
+    .service-cards-container {
+        border-top: 25rem solid $base-pink;
+        position: relative;
+        top: -12rem;
+        .service-card {
+            width: 21rem;
+            height: 31rem;
+            top: -29rem;
+            background-color: $base-blue ;
+            box-shadow: 
+            1rem 1.1rem 0.1rem #FCFCFC, 
+            1rem 1.1rem 0.3rem 0.3rem #3743AA;
+
+            &:hover {
+              box-shadow: -.8rem -.8rem .1rem $base-blue;
+            }
+        }
+    }
 }
 
 
 
+ 
