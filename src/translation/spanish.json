@@ -57,18 +57,18 @@
         "PACKS":[
             {
                 "id":"1",
-                "title": "",
-                "description": ""
+                "title": "Service A",
+                "description": "Insert service A description here"
             },
             {
                 "id":"2",
-                "title": "",
-                "description": ""
+                "title": "Service B",
+                "description": "Insert service B description here"
             },
             {
                 "id":"3",
-                "title": "",
-                "description": ""
+                "title": "Service C",
+                "description": "Insert service C description here"
             }
         ]
     },

@@ -6,3 +6,15 @@
     font-family: $primary-font;
 }
 
+body {
+    width: 100%;
+    height: 100%;
+    background-color: $main-white;
+}
+
+#root {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

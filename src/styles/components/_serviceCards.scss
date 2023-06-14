@@ -1,0 +1,102 @@
+
+// movil
+@media only screen and (max-width: 767px) {
+    .service-cards-container {
+        display: none;
+    }
+}
+
+//tablet
+@media only screen and (min-width: 768px) {
+    .service-cards-container {
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        justify-content: space-evenly;
+        border-top: 18rem solid $base-pink;
+
+        .service-card {
+            width: 20rem;
+            height: 30rem;
+            position: relative;
+            top: -24rem;
+            border:.2rem solid $base-blue;
+            border-radius: 1rem .5rem;
+            background-color: $base-blue ;
+            box-shadow: 
+            .5rem .6rem .1rem $main-white,
+            .5rem .6rem .1rem .2rem $base-blue;
+
+            p {
+                font-family: $secondary-font;
+                text-align: center;
+                padding-top: 2rem;
+                color: $main-white;
+                font-size: 2rem;
+            }
+            &:hover {
+              background-color: $main-white;
+              box-shadow: -.6rem -.6rem .1rem $base-blue;
+              transform: scale(1.2);
+              transition: 0.1s ease-in-out;
+               p {
+                 color: $base-pink;
+               }
+            }
+        }
+      }
+
+}
+
+//desktop
+
+@media only screen and (min-width: 1024px) {
+    .service-cards-container {
+        border-top: 25rem solid $base-pink;
+        position: relative;
+        top: -12rem;
+        .service-card {
+            width: 21rem;
+            height: 31rem;
+            top: -29rem;
+            background-color: $base-blue ;
+            box-shadow: 
+            1rem 1.1rem 0.1rem #FCFCFC, 
+            1rem 1.1rem 0.3rem 0.3rem #3743AA;
+
+            &:hover {
+              box-shadow: -.8rem -.8rem .1rem $base-blue;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .service-cards-container {
+        border-top: 30rem solid #C54F81;
+        top: -6rem;
+        .service-card {
+          width: 25rem;
+          height: 35rem;
+          top: -34rem;
+        }
+    }
+}
+
+// Desktop monitors and larger screens
+
+@media only screen and (min-width: 2000px) {
+    .service-cards-container {
+        border-top: 50rem solid $base-pink;
+        top: -10rem;
+        .service-card {
+            width: 42rem;
+            height: 60rem;
+            top: -55rem;
+            background-color: $base-blue ;
+            box-shadow: 
+            1.5rem 1.6rem 0.1rem #FCFCFC, 
+            1.5rem 1.6rem 0.3rem 0.3rem #3743AA;
+        }
+    }
+}

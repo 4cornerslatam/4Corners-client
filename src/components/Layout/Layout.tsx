@@ -8,12 +8,12 @@ import { AppContext } from "../../context/AppContext";
 const Layout = (): JSX.Element => {
   const { showNavbar } = useContext(AppContext);
     return(
-        <main>
+        <>
           <Header />
           {showNavbar && <NavbarMobile />}
           {!showNavbar && <Outlet /> }
           <Footer />
-        </main>
+        </>
     )
 }
 

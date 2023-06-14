@@ -1,0 +1,29 @@
+.service {
+    width: 20rem;
+    height: 30rem;
+    position: relative;
+    top: -28rem;
+    border:.2rem solid $base-blue;
+    border-radius: 1rem .5rem;
+    background-color: $base-blue ;
+    box-shadow: 
+    .5rem .6rem .1rem $main-white,
+    .5rem .6rem .1rem .2rem $base-blue;
+
+    p {
+        font-family: $secondary-font;
+        text-align: center;
+        padding-top: 2rem;
+        color: $main-white;
+        font-size: 2rem;
+    }
+
+    &.highest-z-index {
+        background-color: $main-white;
+        box-shadow: -.6rem -.6rem .1rem $base-blue;
+
+        p {
+            color: $base-pink;
+        }
+    }
+}
