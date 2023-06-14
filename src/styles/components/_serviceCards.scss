@@ -71,6 +71,32 @@
     }
 }
 
+@media only screen and (min-width: 1200px) {
+    .service-cards-container {
+        border-top: 30rem solid #C54F81;
+        top: -6rem;
+        .service-card {
+          width: 25rem;
+          height: 35rem;
+          top: -34rem;
+        }
+    }
+}
 
+// Desktop monitors and larger screens
 
- 
+@media only screen and (min-width: 2000px) {
+    .service-cards-container {
+        border-top: 50rem solid $base-pink;
+        top: -10rem;
+        .service-card {
+            width: 42rem;
+            height: 60rem;
+            top: -55rem;
+            background-color: $base-blue ;
+            box-shadow: 
+            1.5rem 1.6rem 0.1rem #FCFCFC, 
+            1.5rem 1.6rem 0.3rem 0.3rem #3743AA;
+        }
+    }
+}

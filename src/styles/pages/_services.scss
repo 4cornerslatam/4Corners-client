@@ -63,7 +63,7 @@
       .services-description {
         p {
           font-size: 2rem;
-          line-height: 3rem;
+          line-height: 2.5rem;
         }
       }
     }
@@ -100,6 +100,38 @@
           text-align: justify;
         }
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (min-height: 900px) {
+  .main-services {
+    .services-intro {
+      padding-top:4rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .main-services {
+    .services-intro {
+      padding-top: 6rem;
+
+      .services-title {
+        h2 {
+          font-size: 9rem;
+        }
+      }
+
+      .services-description {
+        p {
+          font-size: 4rem;
+          line-height: 5rem;
+        }
+      }
+    }
+    .services-cards {
+      top: 14rem;
     }
   }
 }
