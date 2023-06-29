@@ -5,7 +5,7 @@ const Home = (): JSX.Element => {
 	const home = data.home;
 
 	return (
-		<section className='home'>
+		<main className='home'>
 			<div className='home-title'>
 				<p className='linea-1'>{home.TITLE.titleLine1}</p>
 				<p className='linea-2'>{home.TITLE.titleLine2}</p>
@@ -17,7 +17,7 @@ const Home = (): JSX.Element => {
 			<div className='home-button'>
 				<ButtonToServices />
 			</div>
-		</section>
+		</main>
 	);
 };
 

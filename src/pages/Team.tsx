@@ -9,7 +9,7 @@ const Team = (): JSX.Element => {
 	const team = data.team;
 
 	return (
-		<div className='team'>
+		<main className='team'>
 			<section className='team-info'>
 				<div className='team-title'>
 					<h1 className='team-title-linea-1'>{team.TITLE.titleLine1}</h1>
@@ -38,7 +38,7 @@ const Team = (): JSX.Element => {
 					</Carousel>
 				</div>
 			</section>
-		</div>
+		</main>
 	);
 };
 
