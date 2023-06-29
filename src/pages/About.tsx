@@ -6,7 +6,7 @@ const About = (): JSX.Element => {
     const about = data.aboutUs
     
     return (
-        <div className='about'>
+        <main className='about'>
             <section className='about-info'>
                 <div className='title'>
                     <h1>{about.TITLE.titleLine1}</h1>
@@ -24,7 +24,7 @@ const About = (): JSX.Element => {
                 <CarouselComponent />      
             </div>
             </section>
-        </div>
+        </main>
     )
 }
 
