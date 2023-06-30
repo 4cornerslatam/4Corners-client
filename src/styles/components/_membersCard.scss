@@ -1,470 +1,464 @@
 .members-cards {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-	.card-front {
-		position: relative;
-		background: $base-blue;
-		border-radius: 2rem;
-		width: 250px;
-		height: 300px;
-		margin-top: 3rem;
-		box-shadow: 4px 4px 4px #cecece;
+  .card-front {
+    position: relative;
+    background: $base-blue;
+    border-radius: 2rem;
+    width: 250px;
+    height: 280px;
+    box-shadow: 4px 4px 4px #cecece;
 
-		&::before {
-			content: '';
-			position: absolute;
-			height: 72px;
-			width: 250px;
-			background: $base-pink;
-			border-radius: 20px 20px 0 0;
-			top: 0;
-			left: 0;
-		}
+    &::before {
+      content: "";
+      position: absolute;
+      height: 72px;
+      width: 250px;
+      background: $base-pink;
+      border-radius: 20px 20px 0 0;
+      top: 0;
+      left: 0;
+    }
 
-		.card-content {
-			position: relative;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			padding: 30px;
-			z-index: 100;
-			font-family: $secondary-font;
+    .card-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 35px;
+      z-index: 100;
+      font-family: $secondary-font;
 
-			.card-icons {
-				position: absolute;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				top: 1rem;
-				right: 2rem;
-				border: none;
-				background-color: transparent;
+      .card-icons {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 1rem;
+        right: 2rem;
+        border: none;
+        background-color: transparent;
 
-				i {
-					margin-top: 10px;
-					color: $main-white;
-					opacity: 0.7;
-					font-size: large;
-					transition: all 0.3s ease;
-					cursor: pointer;
+        i {
+          margin-top: 10px;
+          color: $main-white;
+          opacity: 0.7;
+          font-size: large;
+          transition: all 0.3s ease;
+          cursor: pointer;
 
-					&:hover {
-						opacity: 1;
-						color: $main-white;
-					}
-				}
-			}
+          &:hover {
+            opacity: 1;
+            color: $main-white;
+          }
+        }
+      }
 
-			.card-name {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				margin-top: 0.5rem;
-				color: $main-white;
-				font-family: $secondary-font;
-				font-style: normal;
+      .card-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem;
+        color: $main-white;
+        font-family: $secondary-font;
+        font-style: normal;
 
-				.name {
-					font-size: 18px;
-					font-weight: 500;
-				}
+        .name {
+          font-size: 18px;
+          font-weight: 500;
+        }
 
-				.profession {
-					font-size: 14px;
-					font-weight: 300;
-				}
-			}
+        .profession {
+          color: $main-white;
+          font-family: $secondary-font;
+          font-size: small;
+          font-weight: 300;
+        }
+      }
 
-			.card-button {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				text-align: center;
-				margin-top: 6rem;
+      .card-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 5.5rem;
 
-				button {
-					width: 100px;
-					height: 30px;
-					background: $base-pink;
-					color: $main-white;
-					font-family: $secondary-font;
-					font-size: small;
-					font-weight: 300;
-					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-					border-radius: 5px;
-					outline: none;
-					border: none;
-					cursor: pointer;
-				}
-			}
+        .button-aboutMe {
+          width: 100px;
+          height: 30px;
+          background: $base-pink;
+          color: $main-white;
+          font-family: $secondary-font;
+          font-size: small;
+          font-weight: 300;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 5px;
+          outline: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
 
-			.card-image {
-				width: 94px;
-				height: 92px;
-				border-radius: 50%;
-				background: $base-pink;
+      .card-image {
+        width: 94px;
+        height: 92px;
+        border-radius: 50%;
+        background: $base-pink;
 
-				img {
-					width: 94px;
-					height: 92px;
-					object-fit: cover;
-					border-radius: 50%;
-					border: 4px solid $base-pink;
-				}
-			}
-		}
-	}
-	.card-back {
-		position: relative;
-		background: $base-pink;
-		border-radius: 2rem;
-		width: 250px;
-		height: 300px;
-		box-shadow: 4px 4px 4px #cecece;
-		margin-top: 3rem;
+        img {
+          width: 94px;
+          height: 92px;
+          object-fit: cover;
+          border-radius: 50%;
+          border: 3px solid $base-pink;
+        }
+      }
+    }
+  }
+  .card-back {
+    position: relative;
+    background: $base-pink;
+    border-radius: 2rem;
+    width: 250px;
+    height: 280px;
+    box-shadow: 4px 4px 4px #cecece;
 
-		&::before {
-			content: '';
-			position: absolute;
-			height: 22px;
-			width: 250px;
-			background: $base-blue;
-			border-radius: 0px 0px 20px 20px;
-			bottom: 0;
-			right: 0;
-		}
-		.card-content-back {
-			position: relative;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			text-align: center;
-			padding: 25px;
-			z-index: 100;
-			font-family: $secondary-font;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 22px;
+      width: 250px;
+      background: $base-blue;
+      border-radius: 0px 0px 20px 20px;
+      bottom: 0;
+      right: 0;
+    }
+    .card-content-back {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 25px;
+      z-index: 100;
+      font-family: $secondary-font;
 
-			.card-icons {
-				position: absolute;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				top: 0.5rem;
-				right: 1.2rem;
-				border: none;
-				background: none;
+      .card-icons {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0.5rem;
+        right: 1.2rem;
+        border: none;
+        background: none;
 
-				i {
-					margin-top: 10px;
-					padding: 3px;
-					color: $main-white;
-					font-size: small;
-					transition: all 0.3s ease;
-					cursor: pointer;
-					background: $base-blue;
+        i {
+          margin-top: 10px;
+          padding: 3px;
+          color: $main-white;
+          font-size: small;
+          transition: all 0.3s ease;
+          cursor: pointer;
+          background: $base-blue;
 
-					&:hover {
-						opacity: 1;
-						color: $main-white;
-					}
-				}
-			}
+          &:hover {
+            opacity: 1;
+            color: $main-white;
+          }
+        }
+      }
 
-			.card-description {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				margin-top: 1rem;
-				color: $main-white;
-				font-family: $secondary-font;
-				font-style: normal;
+      .card-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        color: $main-white;
+        font-family: $secondary-font;
 
-				.name {
-					font-size: 18px;
-					font-weight: 500;
-					margin-bottom: 0;
-					color: $base-blue;
-				}
+        .name {
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 0;
+          color: $base-blue;
+        }
 
-				.description {
-					font-size: 12px;
-					font-weight: 100;
-					line-height: 17px;
-					margin: 0.5rem -1rem 1rem -1rem;
-				}
-			}
+        .description {
+          font-size: 11px;
+          font-weight: 100;
+          line-height: 16px;
+          margin: 0.5rem -1rem 1rem -1rem;
+        }
+      }
 
-			.card-image {
-				position: absolute;
-				width: 94px;
-				height: 92px;
-				border-radius: 50%;
-				background: $base-pink;
-				top: -40px;
-				left: -40px;
+      .card-image {
+        position: absolute;
+        width: 84px;
+        height: 82px;
+        border-radius: 50%;
+        background: $base-pink;
+        top: -30px;
+        left: -30px;
 
-				img {
-					width: 94px;
-					height: 92px;
-					object-fit: cover;
-					border-radius: 50%;
-					border: 4px solid $base-pink;
-				}
-			}
-		}
-	}
+        img {
+          width: 84px;
+          height: 82px;
+          object-fit: cover;
+          border-radius: 50%;
+          border: 2px solid $base-pink;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 767px) {
-	.members-cards {
-		.card-front {
-			width: 170px;
-			height: 200px;
-			margin-top: 5rem;
+  .members-cards {
+    .card-front {
+      width: 170px;
+      height: 200px;
+      margin-top: 5rem;
 
-			&::before {
-				height: 52px;
-				width: 170px;
-				top: 0;
-				left: 0;
-			}
+      &::before {
+        height: 52px;
+        width: 170px;
+        top: 0;
+        left: 0;
+      }
 
-			.card-content {
-				padding: 20px;
-				z-index: 100;
-				.card-icons {
-					top: 0.2rem;
-					right: 1rem;
+      .card-content {
+        padding: 20px;
+        z-index: 100;
+        .card-icons {
+          top: 0.2rem;
+          right: 1rem;
 
-					i {
-						margin-top: 6px;
-					}
-				}
-				.card-name {
-					
-					margin-top: 0.7rem;
-					
-	
-					.name {
-						font-size: 12px;
-					}
-	
-					.profession {
-						font-size: 10px;
-					}
-				}
+          i {
+            margin-top: 6px;
+          }
+        }
+        .card-name {
+          margin-top: 0.7rem;
 
-				.card-button {
-					margin-top: 2.5rem;
+          .name {
+            font-size: 12px;
+          }
 
-					button {
-						width: 90px;
-						height: 25px;
+          .profession {
+            font-size: 10px;
+          }
+        }
 
-						font-size: x-small;
-					}
-				}
+        .card-button {
+          margin-top: 2.5rem;
 
-				.card-image {
-					width: 70px;
-					height: 70px;
+          button {
+            width: 90px;
+            height: 25px;
 
-					img {
-						width: 70px;
-						height: 70px;
-						border: 1.5px solid $base-pink;
-					}
-				}
-			}
-		}
-		.card-back {
-			width: 170px;
-			height: 200px;
-			margin-top: 5rem;
+            font-size: x-small;
+          }
+        }
 
-			&::before {
-				height: 22px;
-				width: 170px;
+        .card-image {
+          width: 70px;
+          height: 70px;
 
-			}
-			.card-content-back {
-				padding: 20px;
+          img {
+            width: 70px;
+            height: 70px;
+            border: 1.5px solid $base-pink;
+          }
+        }
+      }
+    }
+    .card-back {
+      width: 170px;
+      height: 200px;
+      margin-top: 5rem;
 
-				.card-icons {
-					top: 0.25rem;
-					right: 1rem;
+      &::before {
+        height: 22px;
+        width: 170px;
+      }
+      .card-content-back {
+        padding: 20px;
 
-					i {
-						margin-top: 7px;
-						padding: 2px;
-						font-size: small;
-					}
-				}
+        .card-icons {
+          top: 0.25rem;
+          right: 1rem;
 
-				.card-description {
-					margin-top: 0;
+          i {
+            margin-top: 7px;
+            padding: 2px;
+            font-size: small;
+          }
+        }
 
-					.name {
-						font-size: 12px;
-						font-weight: 500;
-						margin-top: -1rem;
-					}
+        .card-description {
+          margin-top: 0;
 
-					.description {
-						font-size: 9px;
-						font-weight: 100;
-						line-height: 12px;
-						margin: 0.5rem -1.5rem 1rem -1.5rem;
-					}
-				}
+          .name {
+            font-size: 12px;
+            font-weight: 500;
+            margin-top: -1rem;
+          }
 
-				.card-image {
-					width: 60px;
-					height: 60px;
+          .description {
+            font-size: 9px;
+            font-weight: 100;
+            line-height: 12px;
+            margin: 0.5rem -1.5rem 1rem -1.5rem;
+          }
+        }
 
-					top: -25px;
-					left: -30px;
+        .card-image {
+          width: 60px;
+          height: 60px;
 
-					img {
-						width: 60px;
-						height: 60px;
-						border: 1px solid $base-pink;
-					}
-				}
-			}
-		}
-	}
+          top: -25px;
+          left: -30px;
+
+          img {
+            width: 60px;
+            height: 60px;
+            border: 1px solid $base-pink;
+          }
+        }
+      }
+    }
+  }
 }
 
+// @media only screen and (min-width: 768px) and (max-width: 1275px) {
 
-@media only screen and (min-width: 768px) and (max-width: 1275px) {
+// 	.members-cards {
+// 		.card-front {
+// 			width: 190px;
+// 			height: 242px;
+// 			margin-top: 5rem;
 
-	.members-cards {
-		.card-front {
-			width: 190px;
-			height: 242px;
-			margin-top: 5rem;
+// 			&::before {
+// 				height: 72px;
+// 				width: 190px;
+// 			}
 
-			&::before {
-				height: 72px;
-				width: 190px;
-			}
+// 			.card-content {
+// 				.card-icons {
+// 					top: 0.25rem;
+// 					right: 1.5rem;
 
-			.card-content {
-				.card-icons {
-					top: 0.25rem;
-					right: 1.5rem;
+// 					i {
+// 						margin-top: 8px;
+// 						font-size: medium;
+// 					}
+// 				}
+// 				.card-name {
+// 					display: flex;
+// 					flex-direction: column;
+// 					justify-content: center;
+// 					align-items: center;
+// 					margin-top: 0.5rem;
+// 					color: $main-white;
+// 					font-family: $secondary-font;
+// 					font-style: normal;
 
-					i {
-						margin-top: 8px;
-						font-size: medium;
-					}
-				}
-				.card-name {
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-					margin-top: 0.5rem;
-					color: $main-white;
-					font-family: $secondary-font;
-					font-style: normal;
-	
-					.name {
-						font-size: 14px;
-						font-weight: 500;
-					}
-	
-					.profession {
-						font-size: 12px;
-						font-weight: 300;
-					}
-				}
+// 					.name {
+// 						font-size: 14px;
+// 						font-weight: 500;
+// 					}
 
-				.card-button {
-					margin-top: 1.5rem;
+// 					.profession {
+// 						font-size: 12px;
+// 						font-weight: 300;
+// 					}
+// 				}
 
-					button {
-						width: 90px;
-						height: 25px;
+// 				.card-button {
+// 					margin-top: 1.5rem;
 
-						font-size: x-small;
-					}
-				}
+// 					button {
+// 						width: 90px;
+// 						height: 25px;
 
-				.card-image {
-					width: 80px;
-					height: 80px;
+// 						font-size: x-small;
+// 					}
+// 				}
 
-					img {
-						width: 80px;
-						height: 80px;
-						border: 2px solid $base-pink;
-					}
-				}
-			}
-		}
-		.card-back {
-			width: 204px;
-			height: 242px;
-			margin-top: 5rem;
+// 				.card-image {
+// 					width: 80px;
+// 					height: 80px;
 
-			&::before {
-				height: 22px;
-				width: 204px;
-			}
-			.card-content-back {
-				padding: 20px;
+// 					img {
+// 						width: 80px;
+// 						height: 80px;
+// 						border: 2px solid $base-pink;
+// 					}
+// 				}
+// 			}
+// 		}
+// 		.card-back {
+// 			width: 204px;
+// 			height: 242px;
+// 			margin-top: 5rem;
 
-				.card-icons {
-					top: 0.25rem;
-					right: 1rem;
+// 			&::before {
+// 				height: 22px;
+// 				width: 204px;
+// 			}
+// 			.card-content-back {
+// 				padding: 20px;
 
-					i {
-						margin-top: 7px;
-						padding: 2px;
-						font-size: small;
-					}
-				}
+// 				.card-icons {
+// 					top: 0.25rem;
+// 					right: 1rem;
 
-				.card-description {
-					margin-top: -1rem;
+// 					i {
+// 						margin-top: 7px;
+// 						padding: 2px;
+// 						font-size: small;
+// 					}
+// 				}
 
-					.name {
-						font-size: 14px;
-						font-weight: 500;
-						margin-top: 0;
-					}
+// 				.card-description {
+// 					margin-top: -1rem;
 
-					.description {
-						font-size: 10px;
-						font-weight: 100;
-						line-height: 15px;
-						margin: 0.5rem -1rem 1rem -1rem;
-					}
-				}
+// 					.name {
+// 						font-size: 14px;
+// 						font-weight: 500;
+// 						margin-top: 0;
+// 					}
 
-				.card-image {
-					width: 80px;
-					height: 80px;
+// 					.description {
+// 						font-size: 10px;
+// 						font-weight: 100;
+// 						line-height: 15px;
+// 						margin: 0.5rem -1rem 1rem -1rem;
+// 					}
+// 				}
 
-					top: -45px;
-					left: -40px;
+// 				.card-image {
+// 					width: 80px;
+// 					height: 80px;
 
-					img {
-						width: 80px;
-						height: 80px;
-						border: 2px solid $base-pink;
-					}
-				}
-			}
-		}
-	}
-}
+// 					top: -45px;
+// 					left: -40px;
 
+// 					img {
+// 						width: 80px;
+// 						height: 80px;
+// 						border: 2px solid $base-pink;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
