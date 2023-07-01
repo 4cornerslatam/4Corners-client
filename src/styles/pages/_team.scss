@@ -87,8 +87,6 @@
   .team {
     .team-info {
       .team-title {
-        padding-top: 30%;
-
         .team-title-linea-1 {
           font-size: 35px;
           line-height: 20px;
@@ -97,7 +95,7 @@
 
         .team-title-linea-2 {
           font-size: 18px;
-          line-height: 50px;
+          line-height: 40px;
         }
       }
 
@@ -106,11 +104,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 35%;
+        padding-top: 12rem;
 
         p {
           font-size: 11px;
-          line-height: 18px;
+          line-height: 17px;
         }
       }
 
@@ -121,19 +119,14 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding-top: 30%;
+        padding-top: 10rem;
       }
     }
-
-    .team-members {
-      height: 80%;
-      width: 100%;
+    .team-people {
+      padding-top: 7rem;
       display: flex;
-      flex-direction: row;
       align-items: center;
-      justify-content: space-between;
-      gap: 5rem;
-      padding-top: 25%;
+      justify-content: center;
     }
     .desktop {
       display: none;
@@ -149,8 +142,6 @@
   .team {
     .team-info {
       .team-title {
-        padding-top: 25%;
-
         .team-title-linea-1 {
           font-size: 40px;
           line-height: 20px;
@@ -168,8 +159,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 45%;
-
+        padding-top: 12rem;
         p {
           font-size: 12px;
           line-height: 20px;
@@ -183,12 +173,12 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding-top: 35%;
+        padding-top: 11rem;
       }
     }
 
     .team-people {
-      padding-top: 5rem;
+      padding-top: 8rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -247,7 +237,7 @@
     }
   }
 }
-// Media query iPad
+// Media query iPad - Desktop
 @media only screen and (min-width: 932px) and (max-width: 1245px) {
   .team {
     .team-info {
@@ -288,51 +278,3 @@
     }
   }
 }
-
-// // // Media query other
-// // @media only screen and (min-width: 1024px) {
-// //   .team {
-// //     .team-info {
-// //       .team-title {
-// //         margin-top: 4rem;
-
-// //         h1.team-title-linea-1 {
-// //           font-size: 76px;
-// //         }
-
-// //         h1.team-title-linea-2 {
-// //           font-size: 38px;
-// //         }
-// //       }
-
-// //       .team-paragraph {
-// //         font-size: 24px;
-// //         line-height: 5rem;
-// //         width: 60%;
-// //         height: auto;
-// //         margin-top: 2rem;
-// //       }
-
-// //       .team-button {
-// //         display: flex;
-// //         align-items: center;
-// //         justify-content: center;
-// //         text-align: center;
-// //         margin-top: -3rem;
-// //       }
-// //     }
-
-// //     .team-members {
-// //       display: flex;
-// //       flex-direction: row;
-// //       align-items: center;
-// //       justify-content: space-between;
-// //       gap: 4rem;
-// //       margin-top: 9rem;
-// //     }
-
-// //     .mobile {
-// //       display: none;
-// //     }
-// //   }
-// // }

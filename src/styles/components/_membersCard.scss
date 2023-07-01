@@ -8,15 +8,15 @@
     position: relative;
     background: $base-blue;
     border-radius: 2rem;
-    width: 250px;
-    height: 280px;
+    width: 225px;
+    height: 270px;
     box-shadow: 4px 4px 4px #cecece;
 
     &::before {
       content: "";
       position: absolute;
       height: 72px;
-      width: 250px;
+      width: 225px;
       background: $base-pink;
       border-radius: 20px 20px 0 0;
       top: 0;
@@ -86,7 +86,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-top: 5.5rem;
+        margin-top: 3.5rem;
 
         .button-aboutMe {
           width: 100px;
@@ -124,15 +124,15 @@
     position: relative;
     background: $base-pink;
     border-radius: 2rem;
-    width: 250px;
-    height: 280px;
+    width: 225px;
+    height: 270px;
     box-shadow: 4px 4px 4px #cecece;
 
     &::before {
       content: "";
       position: absolute;
       height: 22px;
-      width: 250px;
+      width: 225px;
       background: $base-blue;
       border-radius: 0px 0px 20px 20px;
       bottom: 0;
@@ -145,7 +145,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 25px;
+      padding: 20px;
       z-index: 100;
       font-family: $secondary-font;
 
@@ -180,7 +180,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         color: $main-white;
         font-family: $secondary-font;
 
@@ -220,15 +220,16 @@
   }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 375px) {
+@media only screen and (min-width: 300px) and (max-width: 376px) {
   .members-cards {
     .card-front {
-      width: 180px;
-      height: 210px;
+      width: 160px;
+      height: 185px;
+      position: relative;
 
       &::before {
         height: 65px;
-        width: 180px;
+        width: 160px;
         top: 0;
         left: 0;
       }
@@ -257,12 +258,12 @@
         }
 
         .card-button {
-          margin-top: 6.5rem;
+          margin-top: 12.5rem;
+          position: absolute;
 
-          button {
+          .button-aboutMe {
             width: 90px;
             height: 25px;
-
             font-size: x-small;
           }
         }
@@ -280,16 +281,16 @@
       }
     }
     .card-back {
-      width: 180px;
-      height: 210px;
+      width: 170px;
+      height: 185px;
       margin-top: 3rem;
 
       &::before {
         height: 20px;
-        width: 180px;
+        width: 170px;
       }
       .card-content-back {
-        padding: 16px;
+        padding: 12px;
 
         .card-icons {
           top: 0.25rem;
@@ -306,7 +307,7 @@
           margin-top: 0;
 
           .name {
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 500;
             margin-top: -0.5rem;
           }
@@ -314,8 +315,8 @@
           .description {
             font-size: 10px;
             font-weight: 100;
-            line-height: 12px;
-            margin: 0.2rem -0.9rem 1rem -0.9rem;
+            line-height: 10px;
+            margin: 0.2rem -0.5rem 1rem -0.5rem;
           }
         }
 
@@ -337,196 +338,74 @@
   }
 }
 
-// @media only screen and (min-width: 376px) and (max-width: 767px) {
-//   .members-cards {
-//     .card-front {
-//       width: 205px;
-//       height: 230px;
-//       margin-top: 5rem;
-
-//       &::before {
-//         height: 70px;
-//         width: 205px;
-//         top: 0;
-//         left: 0;
-//       }
-
-//       .card-content {
-//         padding: 20px;
-//         z-index: 100;
-//         .card-icons {
-//           top: 0.2rem;
-//           right: 1rem;
-
-//           i {
-//             margin-top: 6px;
-//           }
-//         }
-//         .card-name {
-//           margin-top: 0.7rem;
-
-//           .name {
-//             font-size: 12px;
-//           }
-
-//           .profession {
-//             font-size: 10px;
-//           }
-//         }
-
-//         .card-button {
-//           margin-top: 6.5rem;
-
-//           button {
-//             width: 90px;
-//             height: 25px;
-
-//             font-size: x-small;
-//           }
-//         }
-
-//         .card-image {
-//           width: 80px;
-//           height: 80px;
-
-//           img {
-//             width: 80px;
-//             height: 80px;
-//             border: 1.5px solid $base-pink;
-//           }
-//         }
-//       }
-//     }
-//     .card-back {
-//       width: 205px;
-//       height: 230px;
-//       margin-top: 5rem;
-
-//       &::before {
-//         height: 22px;
-//         width: 205px;
-//       }
-//       .card-content-back {
-//         padding: 20px;
-
-//         .card-icons {
-//           top: 0.25rem;
-//           right: 1rem;
-
-//           i {
-//             margin-top: 7px;
-//             padding: 2px;
-//             font-size: small;
-//           }
-//         }
-
-//         .card-description {
-//           margin-top: 0;
-
-//           .name {
-//             font-size: 12px;
-//             font-weight: 500;
-//             margin-top: -0.5rem;
-//           }
-
-//           .description {
-//             font-size: 9px;
-//             font-weight: 100;
-//             line-height: 14px;
-//             margin: 1.3rem -1rem 1rem -1rem;
-//           }
-//         }
-
-//         .card-image {
-//           width: 60px;
-//           height: 60px;
-
-//           top: -25px;
-//           left: -30px;
-
-//           img {
-//             width: 60px;
-//             height: 60px;
-//             border: 1px solid $base-pink;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-@media only screen and (min-width: 772px) and (max-width: 931px) {
+@media only screen and (min-width: 376px) and (max-width: 931px) {
   .members-cards {
     .card-front {
-      width: 190px;
-      height: 220px;
-      margin-top: 5rem;
+      width: 205px;
+      height: 230px;
+      position: relative;
 
       &::before {
-        height: 72px;
-        width: 190px;
+        height: 70px;
+        width: 205px;
+        top: 0;
+        left: 0;
       }
 
       .card-content {
+        padding: 20px;
+        z-index: 100;
         .card-icons {
-          top: 0.25rem;
-          right: 1.5rem;
+          top: 0.2rem;
+          right: 1rem;
 
           i {
-            margin-top: 8px;
-            font-size: medium;
+            margin-top: 6px;
           }
         }
         .card-name {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          margin-top: 0.5rem;
-          color: $main-white;
-          font-family: $secondary-font;
-          font-style: normal;
+          margin-top: 0.7rem;
 
           .name {
-            font-size: 14px;
-            font-weight: 500;
+            font-size: 12px;
           }
 
           .profession {
-            font-size: 12px;
-            font-weight: 300;
-          }
-        }
-
-        .card-button {
-          margin-top: 10rem;
-
-          .button-aboutMe {
-            width: 80px;
-            height: 25px;
             font-size: 10px;
           }
         }
 
+        .card-button {
+          margin-top: 17.5rem;
+          position: absolute;
+
+          button {
+            width: 90px;
+            height: 25px;
+            font-size: x-small;
+          }
+        }
+
         .card-image {
-          width: 70px;
-          height: 70px;
+          width: 80px;
+          height: 80px;
 
           img {
-            width: 70px;
-            height: 70px;
-            border: 2px solid $base-pink;
+            width: 80px;
+            height: 80px;
+            border: 1.5px solid $base-pink;
           }
         }
       }
     }
     .card-back {
-      width: 190px;
-      height: 220px;
+      width: 205px;
+      height: 230px;
       margin-top: 5rem;
 
       &::before {
         height: 22px;
-        width: 190px;
+        width: 205px;
       }
       .card-content-back {
         padding: 20px;
@@ -543,19 +422,19 @@
         }
 
         .card-description {
-          margin-top: -1rem;
+          margin-top: 0;
 
           .name {
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 500;
-            margin-top: 0;
+            margin-top: -0.5rem;
           }
 
           .description {
-            font-size: 10px;
+            font-size: 9px;
             font-weight: 100;
-            line-height: 12px;
-            margin: 0.5rem -1.2rem 1rem -1.2rem;
+            line-height: 14px;
+            margin: 1.3rem -1rem 1rem -1rem;
           }
         }
 
@@ -563,20 +442,142 @@
           width: 60px;
           height: 60px;
 
-          top: -30px;
-          left: -20px;
+          top: -25px;
+          left: -30px;
 
           img {
             width: 60px;
             height: 60px;
-            border: 2px solid $base-pink;
+            border: 1px solid $base-pink;
           }
         }
       }
     }
   }
 }
-@media only screen and (min-width: 931px) and (max-width: 1275px) {
+// @media only screen and (min-width: 376px) and (max-width: 931px) {
+//   .members-cards {
+//     .card-front {
+//       width: 190px;
+//       height: 220px;
+//       margin-top: 5rem;
+
+//       &::before {
+//         height: 72px;
+//         width: 190px;
+//       }
+
+//       .card-content {
+//         .card-icons {
+//           top: 0.25rem;
+//           right: 1.5rem;
+
+//           i {
+//             margin-top: 8px;
+//             font-size: medium;
+//           }
+//         }
+//         .card-name {
+//           display: flex;
+//           flex-direction: column;
+//           justify-content: center;
+//           align-items: center;
+//           margin-top: 0.5rem;
+//           color: $main-white;
+//           font-family: $secondary-font;
+//           font-style: normal;
+
+//           .name {
+//             font-size: 14px;
+//             font-weight: 500;
+//           }
+
+//           .profession {
+//             font-size: 12px;
+//             font-weight: 300;
+//           }
+//         }
+
+//         .card-button {
+//           margin-top: 10rem;
+
+//           .button-aboutMe {
+//             width: 80px;
+//             height: 25px;
+//             font-size: 10px;
+//           }
+//         }
+
+//         .card-image {
+//           width: 70px;
+//           height: 70px;
+
+//           img {
+//             width: 70px;
+//             height: 70px;
+//             border: 2px solid $base-pink;
+//           }
+//         }
+//       }
+//     }
+//     .card-back {
+//       width: 190px;
+//       height: 220px;
+//       margin-top: 5rem;
+
+//       &::before {
+//         height: 22px;
+//         width: 190px;
+//       }
+//       .card-content-back {
+//         padding: 20px;
+
+//         .card-icons {
+//           top: 0.25rem;
+//           right: 1rem;
+
+//           i {
+//             margin-top: 7px;
+//             padding: 2px;
+//             font-size: small;
+//           }
+//         }
+
+//         .card-description {
+//           margin-top: -1rem;
+
+//           .name {
+//             font-size: 14px;
+//             font-weight: 500;
+//             margin-top: 0;
+//           }
+
+//           .description {
+//             font-size: 10px;
+//             font-weight: 100;
+//             line-height: 12px;
+//             margin: 0.5rem -1.2rem 1rem -1.2rem;
+//           }
+//         }
+
+//         .card-image {
+//           width: 60px;
+//           height: 60px;
+
+//           top: -30px;
+//           left: -20px;
+
+//           img {
+//             width: 60px;
+//             height: 60px;
+//             border: 2px solid $base-pink;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+@media only screen and (min-width: 932px) and (max-width: 1275px) {
   .members-cards {
     .card-front {
       width: 190px;
