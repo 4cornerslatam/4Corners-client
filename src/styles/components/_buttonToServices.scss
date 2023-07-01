@@ -22,31 +22,37 @@
 }
 
 // Media query mobile
-@media only screen and (max-width: 767px) {
-  button {
+@media only screen and (min-width: 300px) and (max-width: 375px) {
+  .button-services {
+    width: 125px;
+    height: 55px;
+    p {
+      padding: 15px 35px;
+      font-size: 14px;
+      line-height: 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 767px) {
+  .button-services {
+    width: 154px;
+    height: 66px;
     p {
       padding: 20px 40px;
-      font-size: 24px;
+      font-size: 18px;
       line-height: 2.5rem;
     }
   }
 }
 
-// Media query iPad
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  button {
+@media only screen and (min-width: 772px) and (max-width: 1024px) {
+  .button-services {
+    width: 154px;
+    height: 66px;
     p {
-      padding: 25px 50px;
-      font-size: 28px;
-    }
-  }
-}
-
-// Media query other
-@media only screen and (min-width: 1024px) {
-  button {
-    p {
-      padding: 33px 61px;
+      padding: 20px 40px;
+      font-size: 18px;
     }
   }
 }

@@ -1,4 +1,4 @@
-@import 'react-responsive-carousel/lib/styles/carousel.min.css';
+@import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 /* Your custom styles for the carousel */
 
@@ -30,22 +30,23 @@
 
 .carousel .carousel-status {
   /* Custom styles for the carousel status */
- display:none;
+  display: none;
 }
 
 .carousel .control-dots {
   /* Custom styles for the control dots */
   display: flex;
   justify-content: center;
+  align-items: center;
 
   .dot {
     /* Custom styles for each control dot */
-    background-color: $main-white;
+    background-color: $main-black;
     width: 17px;
     height: 6px;
     border-radius: 5px;
-    border: .5px solid $base-pink;
-    margin:0 5px;
+    box-shadow: none;
+    margin: 0px 7px -10px 0;
 
     &.selected {
       /* Custom styles for the selected dot */

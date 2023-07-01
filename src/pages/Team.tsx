@@ -23,13 +23,13 @@ const Team = (): JSX.Element => {
 				</div>
 			</section>
 			<section className='team-people'>
-				<div className='team-members desktop'>
+				<div className='desktop'>
 					<MembersCard memberId='1' />
 					<MembersCard memberId='2' />
 					<MembersCard memberId='3' />
 					<MembersCard memberId='4' />
 				</div>
-				<div className='team-members mobile'>
+				<div className='mobile'>
 					<Carousel swipeable={true}>
 						<MembersCard memberId='1' />
 						<MembersCard memberId='2' />

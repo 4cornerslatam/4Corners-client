@@ -220,22 +220,21 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 375px) {
   .members-cards {
     .card-front {
-      width: 170px;
-      height: 200px;
-      margin-top: 5rem;
+      width: 180px;
+      height: 210px;
 
       &::before {
-        height: 52px;
-        width: 170px;
+        height: 65px;
+        width: 180px;
         top: 0;
         left: 0;
       }
 
       .card-content {
-        padding: 20px;
+        padding: 15px;
         z-index: 100;
         .card-icons {
           top: 0.2rem;
@@ -258,7 +257,7 @@
         }
 
         .card-button {
-          margin-top: 2.5rem;
+          margin-top: 6.5rem;
 
           button {
             width: 90px;
@@ -281,16 +280,16 @@
       }
     }
     .card-back {
-      width: 170px;
-      height: 200px;
-      margin-top: 5rem;
+      width: 180px;
+      height: 210px;
+      margin-top: 3rem;
 
       &::before {
-        height: 22px;
-        width: 170px;
+        height: 20px;
+        width: 180px;
       }
       .card-content-back {
-        padding: 20px;
+        padding: 16px;
 
         .card-icons {
           top: 0.25rem;
@@ -307,16 +306,16 @@
           margin-top: 0;
 
           .name {
-            font-size: 12px;
+            font-size: 14px;
             font-weight: 500;
-            margin-top: -1rem;
+            margin-top: -0.5rem;
           }
 
           .description {
-            font-size: 9px;
+            font-size: 10px;
             font-weight: 100;
             line-height: 12px;
-            margin: 0.5rem -1.5rem 1rem -1.5rem;
+            margin: 0.2rem -0.9rem 1rem -0.9rem;
           }
         }
 
@@ -338,127 +337,364 @@
   }
 }
 
-// @media only screen and (min-width: 768px) and (max-width: 1275px) {
+// @media only screen and (min-width: 376px) and (max-width: 767px) {
+//   .members-cards {
+//     .card-front {
+//       width: 205px;
+//       height: 230px;
+//       margin-top: 5rem;
 
-// 	.members-cards {
-// 		.card-front {
-// 			width: 190px;
-// 			height: 242px;
-// 			margin-top: 5rem;
+//       &::before {
+//         height: 70px;
+//         width: 205px;
+//         top: 0;
+//         left: 0;
+//       }
 
-// 			&::before {
-// 				height: 72px;
-// 				width: 190px;
-// 			}
+//       .card-content {
+//         padding: 20px;
+//         z-index: 100;
+//         .card-icons {
+//           top: 0.2rem;
+//           right: 1rem;
 
-// 			.card-content {
-// 				.card-icons {
-// 					top: 0.25rem;
-// 					right: 1.5rem;
+//           i {
+//             margin-top: 6px;
+//           }
+//         }
+//         .card-name {
+//           margin-top: 0.7rem;
 
-// 					i {
-// 						margin-top: 8px;
-// 						font-size: medium;
-// 					}
-// 				}
-// 				.card-name {
-// 					display: flex;
-// 					flex-direction: column;
-// 					justify-content: center;
-// 					align-items: center;
-// 					margin-top: 0.5rem;
-// 					color: $main-white;
-// 					font-family: $secondary-font;
-// 					font-style: normal;
+//           .name {
+//             font-size: 12px;
+//           }
 
-// 					.name {
-// 						font-size: 14px;
-// 						font-weight: 500;
-// 					}
+//           .profession {
+//             font-size: 10px;
+//           }
+//         }
 
-// 					.profession {
-// 						font-size: 12px;
-// 						font-weight: 300;
-// 					}
-// 				}
+//         .card-button {
+//           margin-top: 6.5rem;
 
-// 				.card-button {
-// 					margin-top: 1.5rem;
+//           button {
+//             width: 90px;
+//             height: 25px;
 
-// 					button {
-// 						width: 90px;
-// 						height: 25px;
+//             font-size: x-small;
+//           }
+//         }
 
-// 						font-size: x-small;
-// 					}
-// 				}
+//         .card-image {
+//           width: 80px;
+//           height: 80px;
 
-// 				.card-image {
-// 					width: 80px;
-// 					height: 80px;
+//           img {
+//             width: 80px;
+//             height: 80px;
+//             border: 1.5px solid $base-pink;
+//           }
+//         }
+//       }
+//     }
+//     .card-back {
+//       width: 205px;
+//       height: 230px;
+//       margin-top: 5rem;
 
-// 					img {
-// 						width: 80px;
-// 						height: 80px;
-// 						border: 2px solid $base-pink;
-// 					}
-// 				}
-// 			}
-// 		}
-// 		.card-back {
-// 			width: 204px;
-// 			height: 242px;
-// 			margin-top: 5rem;
+//       &::before {
+//         height: 22px;
+//         width: 205px;
+//       }
+//       .card-content-back {
+//         padding: 20px;
 
-// 			&::before {
-// 				height: 22px;
-// 				width: 204px;
-// 			}
-// 			.card-content-back {
-// 				padding: 20px;
+//         .card-icons {
+//           top: 0.25rem;
+//           right: 1rem;
 
-// 				.card-icons {
-// 					top: 0.25rem;
-// 					right: 1rem;
+//           i {
+//             margin-top: 7px;
+//             padding: 2px;
+//             font-size: small;
+//           }
+//         }
 
-// 					i {
-// 						margin-top: 7px;
-// 						padding: 2px;
-// 						font-size: small;
-// 					}
-// 				}
+//         .card-description {
+//           margin-top: 0;
 
-// 				.card-description {
-// 					margin-top: -1rem;
+//           .name {
+//             font-size: 12px;
+//             font-weight: 500;
+//             margin-top: -0.5rem;
+//           }
 
-// 					.name {
-// 						font-size: 14px;
-// 						font-weight: 500;
-// 						margin-top: 0;
-// 					}
+//           .description {
+//             font-size: 9px;
+//             font-weight: 100;
+//             line-height: 14px;
+//             margin: 1.3rem -1rem 1rem -1rem;
+//           }
+//         }
 
-// 					.description {
-// 						font-size: 10px;
-// 						font-weight: 100;
-// 						line-height: 15px;
-// 						margin: 0.5rem -1rem 1rem -1rem;
-// 					}
-// 				}
+//         .card-image {
+//           width: 60px;
+//           height: 60px;
 
-// 				.card-image {
-// 					width: 80px;
-// 					height: 80px;
+//           top: -25px;
+//           left: -30px;
 
-// 					top: -45px;
-// 					left: -40px;
-
-// 					img {
-// 						width: 80px;
-// 						height: 80px;
-// 						border: 2px solid $base-pink;
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
+//           img {
+//             width: 60px;
+//             height: 60px;
+//             border: 1px solid $base-pink;
+//           }
+//         }
+//       }
+//     }
+//   }
 // }
+@media only screen and (min-width: 772px) and (max-width: 931px) {
+  .members-cards {
+    .card-front {
+      width: 190px;
+      height: 220px;
+      margin-top: 5rem;
+
+      &::before {
+        height: 72px;
+        width: 190px;
+      }
+
+      .card-content {
+        .card-icons {
+          top: 0.25rem;
+          right: 1.5rem;
+
+          i {
+            margin-top: 8px;
+            font-size: medium;
+          }
+        }
+        .card-name {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 0.5rem;
+          color: $main-white;
+          font-family: $secondary-font;
+          font-style: normal;
+
+          .name {
+            font-size: 14px;
+            font-weight: 500;
+          }
+
+          .profession {
+            font-size: 12px;
+            font-weight: 300;
+          }
+        }
+
+        .card-button {
+          margin-top: 10rem;
+
+          .button-aboutMe {
+            width: 80px;
+            height: 25px;
+            font-size: 10px;
+          }
+        }
+
+        .card-image {
+          width: 70px;
+          height: 70px;
+
+          img {
+            width: 70px;
+            height: 70px;
+            border: 2px solid $base-pink;
+          }
+        }
+      }
+    }
+    .card-back {
+      width: 190px;
+      height: 220px;
+      margin-top: 5rem;
+
+      &::before {
+        height: 22px;
+        width: 190px;
+      }
+      .card-content-back {
+        padding: 20px;
+
+        .card-icons {
+          top: 0.25rem;
+          right: 1rem;
+
+          i {
+            margin-top: 7px;
+            padding: 2px;
+            font-size: small;
+          }
+        }
+
+        .card-description {
+          margin-top: -1rem;
+
+          .name {
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 0;
+          }
+
+          .description {
+            font-size: 10px;
+            font-weight: 100;
+            line-height: 12px;
+            margin: 0.5rem -1.2rem 1rem -1.2rem;
+          }
+        }
+
+        .card-image {
+          width: 60px;
+          height: 60px;
+
+          top: -30px;
+          left: -20px;
+
+          img {
+            width: 60px;
+            height: 60px;
+            border: 2px solid $base-pink;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 931px) and (max-width: 1275px) {
+  .members-cards {
+    .card-front {
+      width: 190px;
+      height: 220px;
+      margin-top: 5rem;
+
+      &::before {
+        height: 72px;
+        width: 190px;
+      }
+
+      .card-content {
+        .card-icons {
+          top: 0.25rem;
+          right: 1.5rem;
+
+          i {
+            margin-top: 8px;
+            font-size: medium;
+          }
+        }
+        .card-name {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 0.5rem;
+          color: $main-white;
+          font-family: $secondary-font;
+          font-style: normal;
+
+          .name {
+            font-size: 11px;
+            font-weight: 500;
+          }
+
+          .profession {
+            font-size: 10px;
+            font-weight: 300;
+          }
+        }
+
+        .card-button {
+          margin-top: 2.5rem;
+
+          .button-aboutMe {
+            width: 80px;
+            height: 25px;
+            font-size: 10px;
+          }
+        }
+
+        .card-image {
+          width: 70px;
+          height: 70px;
+
+          img {
+            width: 70px;
+            height: 70px;
+            border: 2px solid $base-pink;
+          }
+        }
+      }
+    }
+    .card-back {
+      width: 160px;
+      height: 220px;
+      margin-top: 5rem;
+
+      &::before {
+        height: 22px;
+        width: 160px;
+      }
+      .card-content-back {
+        padding: 20px;
+
+        .card-icons {
+          top: 0.25rem;
+          right: 1rem;
+
+          i {
+            margin-top: 7px;
+            padding: 2px;
+            font-size: small;
+          }
+        }
+
+        .card-description {
+          margin-top: -1rem;
+
+          .name {
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 0;
+          }
+
+          .description {
+            font-size: 10px;
+            font-weight: 100;
+            line-height: 10px;
+            margin: 0.5rem -1.2rem 1rem -1.2rem;
+          }
+        }
+
+        .card-image {
+          width: 60px;
+          height: 60px;
+
+          top: -35px;
+          left: -30px;
+
+          img {
+            width: 60px;
+            height: 60px;
+            border: 2px solid $base-pink;
+          }
+        }
+      }
+    }
+  }
+}
