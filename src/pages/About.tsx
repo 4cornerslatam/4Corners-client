@@ -15,7 +15,7 @@ const About = (): JSX.Element => {
                 <div className='description'>
                     <p>{about.DESCRIPTION}</p>
                 </div>
-                <div className='button'>
+                <div className='button-sabermas'>
                     <ButtonToServices />
                 </div>
             </section>
