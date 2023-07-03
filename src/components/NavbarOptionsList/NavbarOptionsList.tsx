@@ -15,32 +15,34 @@ const NavbarOptionsList = (): JSX.Element => {
     }
 
     return (
-					<ul className='navbar-list'>
-						<li>
-							<Link to='/' onClick={handleClick}>
-								{navBar.ABOUT}
-							</Link>
-						</li>
-						<li>
-							<Link to='/team' onClick={handleClick}>
-								{navBar.TEAM}
-							</Link>
-						</li>
-						<div className='navbar-logo-desktop'>
-							<img src={logoPink} alt='' />
-						</div>
-						<li>
-							<Link to='/services' onClick={handleClick}>
-								{navBar.SERVICES}
-							</Link>
-						</li>
-						<li>
-							<Link to='/contact' onClick={handleClick}>
-								{navBar.CONTACT}
-							</Link>
-						</li>
-					</ul>
-				);
+			<ul className='navbar-list'>
+				<li>
+					<Link to='/about' onClick={handleClick}>
+					{navBar.ABOUT}
+					</Link>
+				</li>
+				<li>
+					<Link to='/team' onClick={handleClick}>
+					{navBar.TEAM}
+					</Link>
+				</li>
+				<Link to='/'>
+					<div className='navbar-logo-desktop'>
+						<img src={logoPink} alt='' />
+					</div>
+				</Link>
+				<li>
+					<Link to='/services' onClick={handleClick}>
+					{navBar.SERVICES}
+					</Link>
+				</li>
+				<li>
+					<Link to='/contact' onClick={handleClick}>
+					{navBar.CONTACT}
+					</Link>
+				</li>
+			</ul>
+		);
 }
 
 export { NavbarOptionsList }
