@@ -57,18 +57,20 @@
       .services-title {
         h2 {
           font-size: 6rem; 
+          line-height: 5.6rem;
         }
       }
       .services-description {
         p {
-          font-size: 2rem;
-          line-height: 2.5rem;
+          font-size: 1.8rem;
+          line-height: 3rem;
+          padding-top: 5rem;
         }
       }
     }
     .services-cards {
       position: relative;
-      top: 3rem;
+      top: 2rem;
       .services-container {
         display: none
       }
@@ -76,7 +78,46 @@
   }
 }
 
-//desktop
+//tablet landscape
+
+@media only screen and (min-width: 768px) and (max-height: 767px) {
+  #root {
+    .main-services {
+      .services-intro {
+        padding-top: 0;
+      }
+      .services-cards {
+        margin: 10rem 0 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 820px) {
+  .main-services {
+    .services-cards {
+      top: 5rem;
+    }
+  }
+}
+
+//laptops and large tablets
+
+@media only screen and (min-height: 1024px) {
+  .main-services {
+    .services-cards {
+      top: -2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 1024px) {
+  .main-services {
+      .services-cards {
+          top: 8rem;
+      }
+  }
+}
 
 @media only screen and (min-width: 1024px){
   .main-services {
@@ -88,14 +129,8 @@
       align-items: center;
       margin: 0 auto;
       padding-top:2rem;
-      .services-title {
-        h2 {
-          font-size: 7rem; 
-        }
-      }
       .services-description {
         p {
-          font-size: 2rem;
           text-align: justify;
         }
       }
@@ -103,10 +138,60 @@
   }
 }
 
+
+@media only screen and (min-height: 1180px) {
+  .main-services {
+    .services-intro {
+      .services-description {
+        padding-top: 4rem;
+      }
+    }
+  }
+}
+
+
 @media only screen and (min-width: 1200px) and (min-height: 900px) {
   .main-services {
     .services-intro {
-      padding-top:4rem;
+      padding-top:10%;
+    }
+  }
+}
+
+@media only screen and (min-height: 1300px) {
+  .main-services {
+    .services-intro {
+      padding-top: 25%;
+    }
+    .services-cards {
+      top: 10%;
+    }
+  }
+}
+
+// Desktop monitors and larger screens
+
+@media only screen and (min-width: 1700px) {
+  .main-services {
+    .services-cards {
+      top:4rem;
+    }
+    .services-intro {
+      padding-top: 6rem;
+
+      .services-title {
+        h2 {
+          font-size: 9.6rem;
+          line-height: 10rem;
+        }
+      }
+
+      .services-description {
+        p {
+          font-size: 2.4rem;
+          line-height: 5rem;
+        }
+      }
     }
   }
 }
@@ -114,23 +199,10 @@
 @media only screen and (min-width: 2000px) {
   .main-services {
     .services-intro {
-      padding-top: 6rem;
-
-      .services-title {
-        h2 {
-          font-size: 7.6rem;
-        }
-      }
-
-      .services-description {
-        p {
-          font-size: 3rem;
-          line-height: 5rem;
-        }
-      }
+      padding-top: 8%;
     }
     .services-cards {
-      top: 14rem;
+      top: 5%;
     }
   }
 }
