@@ -15,7 +15,7 @@ const CarouselComponent = () => {
     };
 
     return (
-        <div className='carousel'>
+        <div className='carouselAbout'>
             <div className='carousel-wrapper' ref={carouselRef}>
                 <div className='carousel-content'>
                     <div className='carousel-title'>
@@ -52,7 +52,7 @@ const CarouselComponent = () => {
                     </div>
                 </div>      
             </div>
-            <button onClick={() => handleNext()}>
+            <button className='button-arrow'onClick={() => handleNext()}>
                 <i className="fa-solid fa-chevron-right fa-fade"  ></i>
             </button>
         </div>
