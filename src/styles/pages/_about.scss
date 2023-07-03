@@ -97,12 +97,12 @@
         &-info{
             height: 80%;
             width: 50%;
-            padding: 0 0 0 6rem;
+            padding: 0 4rem 0 6rem;
             .title{
 
                 h1{
-                    font-size: 50px;
-                    line-height: 40px;
+                    font-size: 6rem;
+                    line-height: 5.6rem;
                 }
             }
     
@@ -110,31 +110,41 @@
                 height: 60%;
 
                 p{
-                    font-size: 14px;
-                    line-height: 25px;
+                    font-size: 1.8rem;
+                    line-height: 3rem;
                     letter-spacing: 0.05em;             
                 }
             }
-            .button{
+            .button-sabermas{
 
-                button{
+                .button-services{
                     height: 60%;
                     width: 45%;
+
+                    p{
+                        font-size: 2.4rem;
+                    }
                 }
             }
         }
         &-values{
             height: 80%;
             width: 50%;
+            display: flex;
+            align-items: center;
 
             .text{
-                height: 65%;
+                height: 100%;
             }
         }
     }
     
 }
+
 // Media query other
+@media only screen and (min-width: 1024px) and (max-width: 1116px) {
+}
+// Media query Desktop
 @media only screen and (min-width: 1117px) {
     .about{
         display: flex;
