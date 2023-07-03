@@ -12,8 +12,8 @@ const Team = (): JSX.Element => {
 		<main className='team'>
 			<section className='team-info'>
 				<div className='team-title'>
-					<h1 className='team-title-linea-1'>{team.TITLE.titleLine1}</h1>
-					<h1 className='team-title-linea-2'>{team.TITLE.titleLine2}</h1>
+					<p className='team-title-linea-1'>{team.TITLE.titleLine1}</p>
+					<p className='team-title-linea-2'>{team.TITLE.titleLine2}</p>
 				</div>
 				<div className='team-paragraph'>
 					<p>{team.DESCRIPTION}</p>
@@ -23,13 +23,13 @@ const Team = (): JSX.Element => {
 				</div>
 			</section>
 			<section className='team-people'>
-				<div className='team-members desktop'>
+				<div className='desktop'>
 					<MembersCard memberId='1' />
 					<MembersCard memberId='2' />
 					<MembersCard memberId='3' />
 					<MembersCard memberId='4' />
 				</div>
-				<div className='team-members mobile'>
+				<div className='mobile'>
 					<Carousel swipeable={true}>
 						<MembersCard memberId='1' />
 						<MembersCard memberId='2' />
