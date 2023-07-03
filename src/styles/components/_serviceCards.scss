@@ -37,7 +37,7 @@
             &:hover {
               background-color: $main-white;
               box-shadow: -.6rem -.6rem .1rem $base-blue;
-              transform: scale(1.2);
+              transform: scale(1.1);
               transition: 0.1s ease-in-out;
                p {
                  color: $base-pink;
@@ -48,17 +48,42 @@
 
 }
 
-//desktop
+//landscape tablet
+
+@media only screen and (min-width: 768px) and (max-height: 767px) {
+    .services-cards {
+        .service-cards-container {
+            border-top: 20rem solid #C54F81;
+            top: -6rem;
+            .service-card {
+                width: 24rem;
+                height: 28rem;
+                top: -24rem;
+            }
+        }
+    }
+  }
+
+@media only screen and (min-height: 820px) {
+    .services-cards {
+        .service-cards-container {
+            border-top: 25rem solid #C54F81;
+            .service-card {
+                top: -29rem;
+            }
+        }
+    }
+}
 
 @media only screen and (min-width: 1024px) {
     .service-cards-container {
-        border-top: 25rem solid $base-pink;
+        border-top: 22rem solid $base-pink;
         position: relative;
-        top: -12rem;
+        top: -8rem;
         .service-card {
             width: 21rem;
             height: 31rem;
-            top: -29rem;
+            top: -28rem;
             background-color: $base-blue ;
             box-shadow: 
             1rem 1.1rem 0.1rem #FCFCFC, 
@@ -71,32 +96,59 @@
     }
 }
 
-@media only screen and (min-width: 1200px) {
+//laptops and large tablets
+
+@media only screen and (min-width: 1024px) and (min-height: 1024px) {
+  .service-cards-container {
+    .service-card {
+      top: -30rem;
+    }
+   }
+}
+
+@media only screen and (min-height: 1180px) {
     .service-cards-container {
-        border-top: 30rem solid #C54F81;
-        top: -6rem;
+        border-top: 25rem solid #C54F81;
         .service-card {
-          width: 25rem;
-          height: 35rem;
-          top: -34rem;
+            top: -28rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) and (min-height: 900px) {
+    .services-cards {
+        .service-cards-container {
+            border-top: 30rem solid #C54F81;
+            top: -6rem;
+            .service-card {
+              width: 25rem;
+              height: 35rem;
+              top: -34rem;
+            }
         }
     }
 }
 
 // Desktop monitors and larger screens
 
-@media only screen and (min-width: 2000px) {
-    .service-cards-container {
-        border-top: 50rem solid $base-pink;
-        top: -10rem;
-        .service-card {
-            width: 42rem;
-            height: 60rem;
-            top: -55rem;
-            background-color: $base-blue ;
-            box-shadow: 
-            1.5rem 1.6rem 0.1rem #FCFCFC, 
-            1.5rem 1.6rem 0.3rem 0.3rem #3743AA;
+@media only screen and (min-width: 1700px) {
+    .services-cards {
+        .service-cards-container {
+            border-top: 40rem solid $base-pink;
+            top: -6rem;
+            .service-card {
+                width: 31rem;
+                height: 47rem;
+                top: -44rem;
+                background-color: $base-blue ;
+                box-shadow: 
+                1.5rem 1.6rem 0.1rem #FCFCFC, 
+                1.5rem 1.6rem 0.3rem 0.3rem #3743AA;
+
+                &:hover {
+                    transform: scale(1.2);
+                  }
+            }
         }
     }
 }
