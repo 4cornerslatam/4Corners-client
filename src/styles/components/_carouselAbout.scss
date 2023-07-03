@@ -65,7 +65,7 @@
     
                 p {
                     width: 90%;
-                    padding: 0 15% 0 5%;
+                    padding: 0 10% 0 5%;
                     font-family: $secondary-font;
                     font-style: normal;
                     font-weight: 300;
@@ -103,7 +103,7 @@
     .button-arrow {
         position: absolute;
         top: 78.5%;
-        width: 18%;
+        width: 14%;
         background: none;
         border: none;
         cursor: pointer;
@@ -116,7 +116,7 @@
         i {
             width: 100%;
             color: $base-pink;
-            font-size: 3.5rem;
+            font-size: 3.8rem;
         }
     }
 }
@@ -137,38 +137,38 @@
 }
 
 // Media query other
-@media only screen and (min-width: 1024px) {
-    .carousel{
+@media only screen and (min-width: 1117px) {
+    .carouselAbout{
         .carousel-wrapper{
             width: 100%;
 
             .carousel-content{
                 .carousel-title{
                     h1{
-                        font-size: 20px;
-                        line-height: 30px;
+                        font-size: 3.6rem;
+                        line-height: 4.3rem;
                         letter-spacing: 0.05em;
-                        padding: 0 15% 0 5%
+                        padding: 0 10% 0 0%
                     }
                 }
                 .carousel-description{
                     p{
                         font-weight: 300;
-                        font-size: 20px;
-                        line-height: 30px;
-                        letter-spacing: 0.05em;
-                        padding: 0 15% 0 10%
+                        font-size: 3.2rem;
+                        line-height: 4.5rem;
+                        letter-spacing: 0.02em;
+                        padding: 0 10% 0 10%
                     }
                 }
             }
         }
-        button{
+        .button-arrow{
             position: absolute;
             top: 70%;
             width: 8%;
 
             i{
-                font-size: 4rem;
+                font-size: 7rem;
             }  
         }
     }
