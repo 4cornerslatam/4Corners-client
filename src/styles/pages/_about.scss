@@ -89,7 +89,7 @@
 }
 
 // Media query iPad
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px)  {
     .about{
         display: flex;
         flex-direction: row;
@@ -142,10 +142,32 @@
 }
 
 // Media query other
-@media only screen and (min-width: 1024px) and (max-width: 1116px) {
+@media only screen and (min-width: 1200px) {
+    .about{
+        .title{
+            h1{
+                font-size: 7rem;
+                line-height: 6.7rem;
+            }
+        }
+        .description{
+            p{
+                font-size: 2rem;
+                line-height: 3.4rem;
+            }
+        }
+        .button-sabermas{
+            .button-services{
+                p{
+                    font-size: 2.4rem;
+                }
+            }
+        }
+    }
 }
+
 // Media query Desktop
-@media only screen and (min-width: 1117px) {
+@media only screen and (min-width: 1728px) {
     .about{
         display: flex;
         flex-direction: row;

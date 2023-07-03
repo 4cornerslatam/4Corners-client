@@ -122,7 +122,7 @@
 }
 
 // Media query iPad
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px)  {
   .carouselAbout{
     width: 100%;
 
@@ -160,11 +160,27 @@
     }
 }
 
-
 // Media query other
-@media only screen and (min-width: 1024px) {
-
-
+@media only screen and (min-width: 1200px) {
+    .carouselAbout{
+        .carousel-wrapper{
+            .carousel-content{
+                .carousel-title{
+                    h1{
+                        font-size: 2rem;
+                        line-height: 2.4rem;
+                        letter-spacing: 0.05em;
+                    }
+                }
+                .carousel-description{
+                    p{
+                        font-size: 2rem;
+                        line-height: 3.4rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // Media query other
