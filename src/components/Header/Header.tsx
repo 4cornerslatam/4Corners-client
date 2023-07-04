@@ -4,6 +4,7 @@ import { Fade as Hamburger } from 'hamburger-react'
 import logoPink from '../../assets/logo_v1_rosa@2x.png';
 import logoWhite from '../../assets/logo_v1_bco@2x.png'
 import { NavbarOptionsList } from '../NavbarOptionsList/NavbarOptionsList';
+import { Link } from 'react-router-dom';
 
 const Header = (): JSX.Element => {
     const { showNavbar, setShowNavbar, baseColor, setBaseColor } = useContext(AppContext)
@@ -23,9 +24,15 @@ const Header = (): JSX.Element => {
           <Hamburger size={22} toggled={showNavbar} toggle={handleToggle} color={hamburgerColor} />
         </div>
         { showNavbar ? 
-          (<img src={logoWhite} alt='4corners-logo-white'/>) 
+          (<Link to='/' onClick={handleToggle}>
+            <img src={logoWhite} alt='4corners-logo-white'/>
+          </Link>
+          ) 
           :
-          (<img src={logoPink} alt='4corners-logo-pink' />)
+          (<Link to='/'>
+            <img src={logoPink} alt='4corners-logo-pink' />
+          </Link>
+          )
         }
         <div className='navbar-list-desktop'>
           <NavbarOptionsList />
