@@ -700,132 +700,132 @@
   }
 }
 
-@media only screen and (min-height: 600px) {
-  .members-cards {
-    .card-front {
-      border-radius: 1rem;
-      width: 225px;
-      height: 220px;
-      box-shadow: 4px 4px 4px #cecece;
+// @media only screen and (min-height: 600px) {
+//   .members-cards {
+//     .card-front {
+//       border-radius: 1rem;
+//       width: 225px;
+//       height: 220px;
+//       box-shadow: 4px 4px 4px #cecece;
 
-      &::before {
-        height: 72px;
-        width: 225px;
-        border-radius: 10px 10px 0 0;
-      }
+//       &::before {
+//         height: 72px;
+//         width: 225px;
+//         border-radius: 10px 10px 0 0;
+//       }
 
-      .card-content {
-        padding: 15px;
+//       .card-content {
+//         padding: 15px;
 
-        .card-icons {
-          top: 0.2rem;
-          right: 1rem;
+//         .card-icons {
+//           top: 0.2rem;
+//           right: 1rem;
 
-          i {
-            margin-top: 0.5rem;
-          }
-        }
+//           i {
+//             margin-top: 0.5rem;
+//           }
+//         }
 
-        .card-name {
-          margin-top: 0.2rem;
+//         .card-name {
+//           margin-top: 0.2rem;
 
-          .name {
-            font-size: 18px;
-            font-weight: 500;
-          }
+//           .name {
+//             font-size: 18px;
+//             font-weight: 500;
+//           }
 
-          .profession {
-            color: $main-white;
-            font-family: $secondary-font;
-            font-size: small;
-            font-weight: 300;
-          }
-        }
+//           .profession {
+//             color: $main-white;
+//             font-family: $secondary-font;
+//             font-size: small;
+//             font-weight: 300;
+//           }
+//         }
 
-        .card-button {
-          margin-top: 7%;
+//         .card-button {
+//           margin-top: 7%;
 
-          .button-aboutMe {
-            width: 100px;
-            height: 30px;
-            background: $base-pink;
-            color: $main-white;
-            font-family: $secondary-font;
-            font-size: small;
-            font-weight: 300;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 5px;
-            outline: none;
-            border: none;
-            cursor: pointer;
-          }
-        }
+//           .button-aboutMe {
+//             width: 100px;
+//             height: 30px;
+//             background: $base-pink;
+//             color: $main-white;
+//             font-family: $secondary-font;
+//             font-size: small;
+//             font-weight: 300;
+//             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//             border-radius: 5px;
+//             outline: none;
+//             border: none;
+//             cursor: pointer;
+//           }
+//         }
 
-        .card-image {
-          width: 84px;
-          height: 82px;
+//         .card-image {
+//           width: 84px;
+//           height: 82px;
 
-          img {
-            width: 84px;
-            height: 82px;
-          }
-        }
-      }
-    }
-    .card-back {
-      position: relative;
-      background: $base-pink;
-      border-radius: 1rem;
-      width: 225px;
-      height: 220px;
-      box-shadow: 4px 4px 4px #cecece;
+//           img {
+//             width: 84px;
+//             height: 82px;
+//           }
+//         }
+//       }
+//     }
+//     .card-back {
+//       position: relative;
+//       background: $base-pink;
+//       border-radius: 1rem;
+//       width: 225px;
+//       height: 220px;
+//       box-shadow: 4px 4px 4px #cecece;
 
-      &::before {
-        height: 14px;
-        width: 225px;
-        border-radius: 0 0 1rem 1rem;
-      }
-      .card-content-back {
-        padding: 1%;
+//       &::before {
+//         height: 14px;
+//         width: 225px;
+//         border-radius: 0 0 1rem 1rem;
+//       }
+//       .card-content-back {
+//         padding: 1%;
 
-        .card-icons {
-          top: 0.5rem;
-          right: 1.2rem;
+//         .card-icons {
+//           top: 0.5rem;
+//           right: 1.2rem;
 
-          i {
-            margin-top: 0.5rem;
-            padding: 0.3rem;
-          }
-        }
+//           i {
+//             margin-top: 0.5rem;
+//             padding: 0.3rem;
+//           }
+//         }
 
-        .card-description {
-          margin-top: 3%;
+//         .card-description {
+//           margin-top: 3%;
 
-          .name {
-            font-size: 16px;
-            font-weight: 500;
-            margin-bottom: 0;
-            color: $base-blue;
-          }
+//           .name {
+//             font-size: 16px;
+//             font-weight: 500;
+//             margin-bottom: 0;
+//             color: $base-blue;
+//           }
 
-          .description {
-            font-size: 10px;
-            font-weight: 100;
-            line-height: 16px;
-            margin: 1rem 0.5rem 0.5rem 0.5rem;
-          }
-        }
+//           .description {
+//             font-size: 10px;
+//             font-weight: 100;
+//             line-height: 16px;
+//             margin: 1rem 0.5rem 0.5rem 0.5rem;
+//           }
+//         }
 
-        .card-image {
-          width: 74px;
-          height: 72px;
+//         .card-image {
+//           width: 74px;
+//           height: 72px;
 
-          img {
-            width: 74px;
-            height: 72px;
-          }
-        }
-      }
-    }
-  }
-}
+//           img {
+//             width: 74px;
+//             height: 72px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
