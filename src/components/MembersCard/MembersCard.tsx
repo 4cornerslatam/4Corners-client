@@ -21,7 +21,7 @@ const MembersCard: React.FC<MembersCardProps> = ({ memberId }) => {
 					<div className='content'>
 						<div className='card-content'>
 							<div className='card-image'>
-								<img src='src/assets/Bere.png' alt={member.name} />
+								<img src={member.photo} alt={member.name} />
 							</div>
 							<div className='card-icons'>
 								<a href={member.linkedinUrl} target='_blank'>
@@ -46,7 +46,7 @@ const MembersCard: React.FC<MembersCardProps> = ({ memberId }) => {
 							<i className='fa-solid fa-xmark'></i>
 						</button>
 						<div className='card-image'>
-							<img src='src/assets/Bere.png' alt='Berenice Hernandez' />
+							<img src={member.photo} alt={member.name} />
 						</div>
 						<div className='card-description'>
 							<span className='name'>{member.name}</span>
