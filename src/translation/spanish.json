@@ -86,7 +86,8 @@
                 "subtitle1": "Web developer",
                 "subtitle2": "Ingeniera en comunicaciones y electrónica",
                 "description": "Soy una ingeniera de profesión y desarrolladora front-end por elección, perteneciente a la comunidad indígena Hñahñu. A lo largo de mi vida, he buscado el crecimiento personal a través del aprendizaje continuo y la práctica. El desarrollo web me permite aplicar esta mentalidad en la creación de tecnología, generando un impacto positivo en la vida de los demás.",
-                "linkedinUrl":"https://www.linkedin.com/in/beresdev/"
+                "linkedinUrl":"https://www.linkedin.com/in/beresdev/",
+                "photo": "https://drive.google.com/file/d/18oyo-Gpiq8dSDklTVDH0DUDAzsqfWKgS/view?usp=sharing"
             },
             {
                 "id":"2",
@@ -94,7 +95,8 @@
                 "subtitle1": "Web developer",
                 "subtitle2": "Arquitecta",
                 "description": "Soy una exploradora incansable de la creatividad que ha encontrado en la programación una forma de dar vida a sus ideas y mejorar la experiencia digital de las personas. Como web developer, disfruto creando experiencias cautivadoras, colaborando con otros profesionales para alcanzar objetivos comunes y desafiándome a mí misma para mejorar día a día.",
-                "linkedinUrl":"https://www.linkedin.com/in/kamilaojeda/"
+                "linkedinUrl":"https://www.linkedin.com/in/kamilaojeda/",
+                "photo": "https://drive.google.com/file/d/1M0scRpiK8GqTYmRYz7Ktp0mBH-aNWmBq/view?usp=share_link"
             },
             {
                 "id":"3",
@@ -102,7 +104,8 @@
                 "subtitle1": "Web developer",
                 "subtitle2": "Diseñadora Gráfica",
                 "description": "¡Hola! Soy Sharon Arana. Mi experiencia en diseño me ha brindado la capacidad de fusionar estética y funcionalidad en mi trabajo, tomando siempre la experiencia del usuario como una prioridad. Me apasiona construir aplicaciones web hermosas, intuitivas y funcionales, y estoy emocionada de seguir aprendiendo y creciendo como desarrolladora en este apasionante campo.",
-                "linkedinUrl":"https://www.linkedin.com/in/sharoninaa/"
+                "linkedinUrl":"https://www.linkedin.com/in/sharoninaa/",
+                "photo": "https://api.typeform.com/responses/files/fca428410c1ea592db61547c6c7ecdfe2bfff8b2dcbfd17374573a3f497d02c0/SharonArana.jpg"
             },
             {
                 "id":"4",
@@ -110,7 +113,8 @@
                 "subtitle1": "Web developer",
                 "subtitle2": "Arquitecta - Entusiaste del e-commerce",
                 "description": "Creo objetos, espacios y código. Esa variedad de intereses me ha impulsado a  aprender de manera constante, siempre buscando nuevos retos y conocimientos. Ahora, como Front-end Developer, combino mis habilidades técnicas y creativas para ser parte del desarrollo de productos y experiencias digitales que conjuguen estética, funcionalidad y sean amigables para las personas.",
-                "linkedinUrl":"https://www.linkedin.com/in/ingridgallegos/"
+                "linkedinUrl":"https://www.linkedin.com/in/ingridgallegos/",
+                "photo": "https://api.typeform.com/responses/files/8e9cbc4b8a903baf466bc2b0e5fed4413cdb63f5ca9dc5c6978751a7539d7f43/ig.jpg"
             }
         ]
     },
@@ -126,3 +130,4 @@
         "CREATORS": "4corners" 
     }
 }
+
