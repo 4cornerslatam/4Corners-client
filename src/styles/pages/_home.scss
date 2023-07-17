@@ -8,54 +8,65 @@
 
   .home-title {
     width: 80%;
-    height: 40%;
+    height: 50%;
     text-transform: uppercase;
     color: $base-blue;
+    padding-top: 1%;
 
     .home-title-linea-1 {
       height: 40%;
       font-weight: 900;
-      font-size: 96px;
-      letter-spacing: 24px;
+      font-size: 92px;
+      letter-spacing: 20px;
     }
 
     .home-title-linea-2 {
       height: 20%;
       font-weight: 700;
-      font-size: 64px;
+      font-size: 60px;
     }
 
     .home-title-linea-3 {
       height: 40%;
       font-weight: 900;
-      font-size: 64px;
+      font-size: 62px;
       letter-spacing: 12px;
     }
   }
 
   .home-paragraph {
-    width: 50%;
+    width: 60%;
     height: 40%;
     p {
       color: $main-black;
-      font-size: 18px;
+      font-size: 20px;
       font-family: $secondary-font;
       font-style: normal;
       font-weight: 300;
       line-height: 30px;
       letter-spacing: 0.05em;
-      padding-top: 2%;
+      padding-top: 1%;
+      padding-bottom: 2%;
     }
   }
 
   .home-button {
     width: 100%;
-    height: 20%;
+    height: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-bottom: 15rem;
+    padding-bottom: 3%;
+    .button-services {
+      width: 420px;
+      height: 106px;
+
+      p {
+        font-size: 28px;
+        line-height: 30px;
+      }
+    }
   }
 }
 
@@ -67,7 +78,6 @@
       height: 40%;
       text-align: right;
       margin-right: 50px;
-      padding-top: 5rem;
 
       .home-title-linea-1 {
         height: 40%;
@@ -107,7 +117,6 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding-bottom: 10rem;
 
       .button-services {
         width: 320px;
@@ -130,8 +139,7 @@
       height: 40%;
       text-align: right;
       margin-right: 50px;
-      padding-top: 5rem;
-
+      padding-top: 1%;
       .home-title-linea-1 {
         height: 40%;
         font-weight: 900;
@@ -170,7 +178,6 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding-bottom: 10rem;
 
       .button-services {
         width: 320px;
@@ -189,53 +196,51 @@
   .home {
     .home-title {
       width: 60%;
-      height: 40%;
+      height: 45%;
+      padding-top: 1%;
       .home-title-linea-1 {
-        height: 35%;
         font-weight: 900;
-        font-size: 84px;
+        font-size: 74px;
         letter-spacing: 10px;
       }
 
       .home-title-linea-2 {
-        height: 15%;
         font-weight: 700;
-        font-size: 42px;
+        font-size: 32px;
       }
 
       .home-title-linea-3 {
-        height: 40%;
         font-weight: 900;
-        font-size: 52px;
+        font-size: 42px;
         letter-spacing: 5px;
       }
     }
 
     .home-paragraph {
-      width: 70%;
-      height: 50%;
+      width: 75%;
+      height: 30%;
       p {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 30px;
         letter-spacing: 0.1em;
+        padding-bottom: 1%;
       }
     }
 
     .home-button {
       width: 100%;
-      height: 20%;
+      height: 40%;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding-bottom: 15rem;
 
       .button-services {
-        width: 420px;
-        height: 106px;
+        width: 320px;
+        height: 102px;
 
         p {
-          font-size: 28px;
+          font-size: 24px;
           line-height: 30px;
         }
       }
@@ -247,16 +252,18 @@
   .home {
     .home-title {
       width: 60%;
-      height: 40%;
+      height: 50%;
+      padding-top: 1%;
+
       .home-title-linea-1 {
-        height: 35%;
+        height: 40%;
         font-weight: 900;
         font-size: 84px;
         letter-spacing: 10px;
       }
 
       .home-title-linea-2 {
-        height: 15%;
+        height: 20%;
         font-weight: 700;
         font-size: 42px;
       }
@@ -271,31 +278,11 @@
 
     .home-paragraph {
       width: 70%;
-      height: 50%;
+      height: 40%;
       p {
         font-size: 20px;
         line-height: 30px;
         letter-spacing: 0.1em;
-      }
-    }
-
-    .home-button {
-      width: 100%;
-      height: 20%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding-bottom: 15rem;
-
-      .button-services {
-        width: 420px;
-        height: 106px;
-
-        p {
-          font-size: 28px;
-          line-height: 30px;
-        }
       }
     }
   }

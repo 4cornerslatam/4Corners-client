@@ -1,222 +1,214 @@
-.about{
-    height: 100%;
-    width: 100vw;
+.about {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  &-info {
+    height: 55%;
+    width: 100%;
     display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-    text-align: center;
-    justify-content: center;   
-    
-    &-info{
-        height: 55%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: start;
-        padding: 0 4rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    padding: 0 4rem;
 
-        .title{
-            height: 25%;
-            width: 100%;
-            color: $base-blue;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
+    .title {
+      height: 25%;
+      width: 100%;
+      color: $base-blue;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
 
-            h1{
-                font-size: 4rem;
-                font-style: normal;
-                font-weight: 900;
-                line-height: 3.5rem
-            }
-        }
-
-        .description{
-            height: 50%;
-            display: flex;
-            align-items: center;
-
-            p{
-                font-size: 1.4rem;
-                font-family: $secondary-font;
-                font-style: normal;
-                font-weight: 300;
-                line-height: 2rem;
-                letter-spacing: 0.05em;
-                padding-top: 2%;
-            }
-
-        }
-        .button-sabermas{
-            height: 25%;
-            width:  100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            .button-services{
-                height: 60%;
-                width: 45%;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 3rem;
-
-                p{
-                    padding: 0;
-                    font-size: 2rem;
-                    line-height: 2rem;
-                    letter-spacing: 0.05em;
-                    color: #C54F81;
-                    font-family: "Roboto", sans-serif;
-                }
-            } 
-        }
+      h1 {
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 3.5rem;
+      }
     }
 
-    &-values{
-        height: 45%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        
-        .text{
-            height: 90%;
-            width: 100%;
-        }
+    .description {
+      height: 50%;
+      display: flex;
+      align-items: center;
+
+      p {
+        font-size: 1.4rem;
+        font-family: $secondary-font;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2rem;
+        letter-spacing: 0.05em;
+        padding-top: 2%;
+      }
     }
+    .button-sabermas {
+      height: 25%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .button-services {
+        height: 60%;
+        width: 45%;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 3rem;
+
+        p {
+          padding: 0;
+          font-size: 2rem;
+          line-height: 2rem;
+          letter-spacing: 0.05em;
+          color: #c54f81;
+          font-family: "Roboto", sans-serif;
+        }
+      }
+    }
+  }
+
+  &-values {
+    height: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .text {
+      height: 90%;
+      width: 100%;
+    }
+  }
 }
 
 // Media query iPad
-@media only screen and (min-width: 768px)  {
-    .about{
-        display: flex;
-        flex-direction: row;
+@media only screen and (min-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: row;
 
-        &-info{
-            height: 80%;
-            width: 50%;
-            padding: 0 4rem 0 6rem;
-            .title{
-
-                h1{
-                    font-size: 6rem;
-                    line-height: 5.6rem;
-                }
-            }
-    
-            .description{
-                height: 60%;
-
-                p{
-                    font-size: 1.8rem;
-                    line-height: 3rem;
-                    letter-spacing: 0.05em;             
-                }
-            }
-            .button-sabermas{
-
-                .button-services{
-                    height: 60%;
-                    width: 45%;
-
-                    p{
-                        font-size: 2.4rem;
-                    }
-                }
-            }
+    &-info {
+      height: 80%;
+      width: 50%;
+      padding: 0 4rem 0 6rem;
+      .title {
+        h1 {
+          font-size: 6rem;
+          line-height: 5.6rem;
         }
-        &-values{
-            height: 80%;
-            width: 50%;
-            display: flex;
-            align-items: center;
+      }
 
-            .text{
-                height: 100%;
-            }
+      .description {
+        height: 60%;
+
+        p {
+          font-size: 1.8rem;
+          line-height: 3rem;
+          letter-spacing: 0.05em;
         }
+      }
+      .button-sabermas {
+        .button-services {
+          height: 60%;
+          width: 45%;
+
+          p {
+            font-size: 2.4rem;
+          }
+        }
+      }
     }
-    
+    &-values {
+      height: 80%;
+      width: 50%;
+      display: flex;
+      align-items: center;
+
+      .text {
+        height: 100%;
+      }
+    }
+  }
 }
 
 // Media query other
 @media only screen and (min-width: 1200px) {
-    .about{
-        .title{
-            h1{
-                font-size: 7rem;
-                line-height: 6.7rem;
-            }
-        }
-        .description{
-            p{
-                font-size: 2rem;
-                line-height: 3.4rem;
-            }
-        }
-        .button-sabermas{
-            .button-services{
-                p{
-                    font-size: 2.4rem;
-                }
-            }
-        }
+  .about {
+    .title {
+      h1 {
+        font-size: 7rem;
+        line-height: 6.7rem;
+      }
     }
+    .description {
+      p {
+        font-size: 2rem;
+        line-height: 3.4rem;
+      }
+    }
+    .button-sabermas {
+      .button-services {
+        p {
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
 }
 
 // Media query Desktop
 @media only screen and (min-width: 1728px) {
-    .about{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
+  .about {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
 
-        &-info{
-            height: 90%;
-            width: 50%;
-            padding: 0 6rem 0 8rem;
+    &-info {
+      height: 90%;
+      width: 50%;
+      padding: 0 6rem 0 8rem;
 
-            .title{
-    
-                h1{
-                    font-size: 9.6rem;
-                    line-height: 10rem;
-                }
-            }
-            .description{
-    
-                p{
-                    font-weight: 300;
-                    font-size: 2.4rem;
-                    line-height: 5rem;
-                    letter-spacing: 0.05em;   
-                }
-    
-            }
-            .button-sabermas{
-                height: 25%;
-                align-items: flex-start;
-
-                .button-services{
-                    height: 50%;
-                    width: 35%;
-
-                    p{
-                        font-size: 3.2rem;
-                        line-height: 3rem;
-                    }
-                }
-            }
+      .title {
+        h1 {
+          font-size: 9.6rem;
+          line-height: 10rem;
         }
-        &-values{
-            height: 80%;
-            width: 50%;
-            .text{
-                width: 100%;
-            }
-            
+      }
+      .description {
+        p {
+          font-weight: 300;
+          font-size: 2.4rem;
+          line-height: 5rem;
+          letter-spacing: 0.05em;
         }
-    }   
+      }
+      .button-sabermas {
+        height: 25%;
+        align-items: flex-start;
+
+        .button-services {
+          height: 50%;
+          width: 35%;
+
+          p {
+            font-size: 3.2rem;
+            line-height: 3rem;
+          }
+        }
+      }
+    }
+    &-values {
+      height: 80%;
+      width: 50%;
+      .text {
+        width: 100%;
+      }
+    }
+  }
 }
