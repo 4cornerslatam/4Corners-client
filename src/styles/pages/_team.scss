@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
 
   .team-info {
     height: 40%;
@@ -107,6 +108,8 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-top: 10%;
+
         .team-info-t-p-title {
           margin-top: 1%;
           height: 40%;
@@ -139,7 +142,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin-top: 13%;
+        margin-top: 12%;
 
         .button-services {
           width: 15rem;
@@ -152,7 +155,7 @@
       }
     }
     .team-people {
-      padding-top: 40%;
+      margin-top: 16%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -182,7 +185,7 @@
         text-align: center;
         .team-info-t-p-title {
           margin-top: 1%;
-          height: 40%;
+          height: 50%;
           .team-info-t-p-title-linea-1 {
             font-size: 5rem;
             letter-spacing: 1.8rem;
@@ -193,7 +196,7 @@
           }
         }
         .team-info-t-p-paragraph {
-          height: 40%;
+          height: 60%;
           width: 100%;
           display: flex;
           align-items: center;
@@ -212,7 +215,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin-top: 13%;
+        margin-top: 10%;
 
         .button-services {
           width: 20rem;
@@ -247,35 +250,28 @@
     .team-info {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      margin-bottom: 3%;
+      margin-top: 5%;
+      height: 50%;
       .team-info-t-p {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
         .team-info-t-p-title {
-          margin-top: 1%;
-          height: 40%;
           .team-info-t-p-title-linea-1 {
-            font-size: 5.5rem;
+            font-size: 5rem;
             letter-spacing: 1.8rem;
-            line-height: 3.5rem;
+            line-height: 1.7rem;
           }
           .team-info-t-p-title-linea-2 {
             font-size: 2.2rem;
-            line-height: 3.5rem;
-            letter-spacing: 1rem;
           }
         }
         .team-info-t-p-paragraph {
-          height: 40%;
+          height: 50%;
           width: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
-          margin-top: 1.5%;
+          margin-top: 3%;
           p {
             font-size: 1.4rem;
             line-height: 2.2rem;
@@ -290,14 +286,14 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin-top: 5%;
+        margin-top: 3%;
 
         .button-services {
           width: 20rem;
           height: 6rem;
 
           p {
-            font-size: 2.2rem;
+            font-size: 2rem;
           }
         }
       }
@@ -305,11 +301,11 @@
     .team-people {
       height: 50%;
       width: 100%;
-      margin-top: 7%;
-      margin-bottom: -8rem;
+      margin-top: 1%;
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
     }
     .desktop {
       display: none;

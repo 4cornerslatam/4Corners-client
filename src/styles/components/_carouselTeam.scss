@@ -6,6 +6,9 @@
   max-width: 300px;
   max-height: 500px;
 }
+.carousel .control-arrow {
+  display: none;
+}
 
 .carousel .slider-wrapper {
   /* Custom styles for the slider wrapper */
@@ -50,5 +53,47 @@
       /* Custom styles for the selected dot */
       background-color: $base-pink;
     }
+  }
+
+  .dot-animation {
+    /* Animation styles for the dots */
+    animation: dotTinting 1s infinite;
+  }
+}
+
+@keyframes dotTinting {
+  0% {
+    background-color: $main-black;
+  }
+  50% {
+    background-color: $base-pink;
+  }
+  100% {
+    background-color: $main-black;
+  }
+}
+
+.carousel .right-arrow {
+  /* Custom styles for the right arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: $main-black;
+  border-radius: 50%;
+  animation: arrowTinting 1s infinite;
+}
+
+@keyframes arrowTinting {
+  0% {
+    background-color: $main-black;
+  }
+  50% {
+    background-color: $base-pink;
+  }
+  100% {
+    background-color: $main-black;
   }
 }
