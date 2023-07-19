@@ -16,7 +16,6 @@
 
             &:hover {
                 color: $base-blue;
-                font-size: 3rem;
                 border-bottom: none;
             }
         }
@@ -54,13 +53,12 @@
         li {
             a {
                 color: $base-pink;
-                font-size: 1.6rem;
+                font-size: 1.8rem;
                 font-weight: normal;
                 text-transform: none;
                 
                 &:hover {
                     text-decoration: underline;
-                    font-size: 1.8rem;
                 }
 
                 &::first-letter {
@@ -104,6 +102,14 @@
         li {
             a {
                 font-size: 1.8rem;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1700px) {
+        li {
+            a {
+                font-size: 2rem;
             }
         }
     }
