@@ -5,7 +5,7 @@
 
    .services-intro {
     width: 100%;
-    padding-top: 10rem;
+    padding-top: 1rem;
       .services-title {
         width: 90%;
         margin: 0 auto;
@@ -44,16 +44,41 @@
       height: 10rem;
       display: flex;
       justify-content: center;
-      border-top: 14rem solid $base-pink;
+      border-top: 12rem solid $base-pink;
    }
   }
 }
+
+@media only screen and (max-width:400px) and (min-height: 810px) {
+  .main-services {
+    .services-intro {
+      padding-top: 5rem;
+    }
+    .services-cards {
+      margin: 18rem 0 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width:412px) and (min-height: 900px) {
+  .main-services {
+    .services-intro {
+      padding-top: 8rem;
+    }
+
+    .services-cards {
+      margin: 20rem 0 1rem;
+    }
+  }
+}
+
 
 // tablet
 
 @media only screen and (min-width: 768px) {
   .main-services {
     .services-intro {
+      padding-top: 10rem;
       .services-title {
         h2 {
           font-size: 6rem; 
@@ -153,7 +178,7 @@
 @media only screen and (min-width: 1200px) and (min-height: 900px) {
   .main-services {
     .services-intro {
-      padding-top:10%;
+      padding-top:5%;
     }
   }
 }
@@ -161,7 +186,7 @@
 @media only screen and (min-height: 1300px) {
   .main-services {
     .services-intro {
-      padding-top: 25%;
+      padding-top: 15%;
     }
     .services-cards {
       top: 10%;
