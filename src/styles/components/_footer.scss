@@ -38,12 +38,20 @@ footer {
             margin: 0 auto;
 
             i {
-                font-size: 3.5rem;
+                font-size: 4rem;
             }
         }
 
         .copyright-container {
             display: none;
+        }
+    }
+
+    @media only screen and (min-width: 1700px) {
+        .social-media_container {
+            i {
+                font-size: 6rem;
+            }
         }
     }
 }
